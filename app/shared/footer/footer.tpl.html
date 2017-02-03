@@ -1,0 +1,29 @@
+<footer class="page-footer">
+  <div class="container">
+    <p class="page-footer__social">
+      <a href="https://www.facebook.com/longplay.fi" target="_blank" class="page-footer__social-link">
+        <span class="fa fa-facebook-square"></span> Löydät Long Playn Facebookissa      </a>
+      <a href="https://twitter.com/LongPlay_fi" target="_blank" class="page-footer__social-link">
+        <span class="fa fa-twitter-square"></span> Löydät Long Playn Twitterissä      </a>
+    </p>
+
+    <nav role="navigation" aria-labelledby="block-longplay-footer-menu" id="block-longplay-footer" class="contextual-region">
+      <h2 class="visually-hidden">Footer menu</h2>
+      <div data-contextual-id="block:block=longplay_footer:langcode=fi|menu:menu=footer:langcode=fi"></div>
+      <ul class=" page-footer__links">
+        <li class="page-footer__item" ng-repeat="footer_link in footer_links">
+          <a href="{{footer_link.link}}" class="page-footer__link">{{footer_link.title}}</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" class="page-footer__logo">Long Play</a>
+    <p class="page-footer__copy">© Long Play Media Oy</p>
+
+    <address class="page-footer__address" ng-repeat="address in footer_address">
+      <span class="page-footer__address-item">{{address.street}}</span>
+      <a href="mailto:yllapito@longplay.fi" class="footer-page__address-link">{{address.mailto}}</a>
+      <span class="page-footer__address-item">Y-tunnus {{address.busID}}</span>
+    </address>
+
+  </div>
+</footer>

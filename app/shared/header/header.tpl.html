@@ -1,0 +1,32 @@
+<section class="header-no-sidebar">
+  <header class="header-main">
+    <nav class="nav-main">
+      <div class="nav-main__wrapper">
+        <h1 class="nav-main__head">
+          <a href="/" class="nav-main__head-link">Long Play</a>
+        </h1>
+
+        <div class="nav-main__extra">
+          <a href="/lp_search/search" class="use-ajax search nav-main__extra-link--search nav-main__extra-text fa fa-search" data-dialog-type="modal" data-dialog-options="{&quot;width&quot;:&quot;100%&quot;,&quot;dialogClass&quot;:&quot;search-form&quot;}"></a>
+          <div class="hamburger">
+            <div class="hamburger-box active">
+              <div class="bun top"></div>
+              <div class="meat"></div>
+              <div class="bun bottom"></div>
+            </div>
+          </div>
+          <a href="/user/login" class="use-ajax login nav-main__extra-link--login nav-main__extra-text dialog-login-open" data-dialog-type="modal" data-dialog-options="{&quot;dialogClass&quot;:&quot;login-modal dialog-without-buttons&quot;,&quot;width&quot;:&quot;auto&quot;,&quot;buttons&quot;:[{&quot;primary&quot;:false}]}">Kirjaudu sisään</a>
+        </div>
+        <nav role="navigation" aria-labelledby="block-longplay-main-menu-menu" id="block-longplay-main-menu" class="contextual-region">
+          <h2 class="visually-hidden">Main navigation</h2>
+          <div data-contextual-id="block:block=longplay_main_menu:langcode=fi|menu:menu=main:langcode=fi"></div>
+            <ul class=" nav-menu">
+              <li ng-repeat="link in menu" class="nav-menu__item">
+                <a href="{{link.link}}" title="{{link.title}}" class="nav-menu__link">{{link.title}}</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
+    </nav>
+  </header>
+</section>

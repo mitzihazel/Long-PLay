@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app="longPlay">
+  <head profile="http://sb02.wembassy.com">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+
+    <!-- Libraries -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/libs/angular/angular.min.js" ></script>
+
+    <!-- Application -->
+    <script src="/app/app.modules.js"> </script>
+
+    <!-- =========== Header ================= -->
+    <script src="/app/shared/header/header.directive.js"> </script>
+    <script src="/app/shared/header/header.factory.js"> </script>
+
+    <!-- =========== Homepage Heading Section ================= -->
+    <script src="/app/components/homepage/heading/heading.directive.js"> </script>
+    <script src="/app/components/homepage/heading/heading.factory.js"> </script>
+    <!-- =========== Homepage Subscription Section ================= -->
+    <script src="/app/components/homepage/subscribe-and-join/subscription.directive.js"> </script>
+    <script src="/app/components/homepage/subscribe-and-join/subscription.factory.js"> </script>
+    <!-- =========== Homepage Singles Slideshow Section ================= -->
+    <script src="/app/components/homepage/singles-slideshow/singles_slide.directive.js"> </script>
+    <script src="/app/components/homepage/singles-slideshow/singles_slide.factory.js"> </script>
+    <!-- =========== Homepage Sidetones Slideshow Section ================= -->
+    <script src="/app/components/homepage/sidetones-slideshow/sidetone.directive.js"> </script>
+    <script src="/app/components/homepage/sidetones-slideshow/sidetone.factory.js"> </script>
+
+    <!-- =========== Footer ================= -->
+    <script src="/app/shared/footer/footer.directive.js"> </script>
+    <script src="/app/shared/footer/footer.factory.js"> </script>
+    <script src="/app/shared/footer/footer_address.factory.js"> </script>
+
+    <!-- =========== Stylesheets =============== -->
+    <link rel="stylesheet" href="assets/css/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/screen.css">
+    <link rel="stylesheet" href="assets/css/ie.css">
+    <link rel="stylesheet" href="assets/css/print.css">
+
+    <!-- JavaScript files -->
+    <script src="assets/js/bootstrap.js" ></script>
+    <script src="assets/js/bootstrap.min.js" ></script>
+    <script src="assets/js/html5shiv.js" ></script>
+    <script src="assets/js/respond.min.js" ></script>
+
+    <!-- Swiper -->
+    <script src="assets/js/swiper/swiper.jquery.min.js" ></script>
+    <script src="assets/js/swiper/swiper.js" ></script>
+
+  </head>
+  <body class="path-frontpage">
+     <div class="loader" style="display:none;"></div>
+
+     <!-- Page contents -->
+     <section class="page  no-sidebar clearfix">
+       <div class="page_wrapper page__main-content normal open">
+         <div heading></div>
+         <div subscribe></div>
+         <div single-slideshow></div>
+         <div sidetone-slider></div>
+       </div>
+     </section>
+
+     <footer footer class="footer-links"> </footer>
+
+     <header header class="main-navigation"> <header>
+  </body>
+</html>

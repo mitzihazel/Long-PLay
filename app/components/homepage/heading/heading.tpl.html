@@ -1,0 +1,48 @@
+<article class="single single--featured node-nano2 node-scrollto" ng-repeat="single_feat in single_featured">
+  <a name="elamani-rajan-takana" class="anchor"></a>
+  <div class="single__bg-wrapper">
+    <div class="single__bg" style="background-image: url({{single_feat.background_image_cover}})"></div>
+  </div>
+    <div class="container">
+      <div class="content">
+        <a href="{{single_feat.item_link}}" class="single__cover">
+          <span class="single__cover-img-wrapper">
+            <img src="{{single_feat.single_cover_image}}" width="360" height="480" alt="{{single_feat.item_author_name}}: {{single_feat.item_title}}" typeof="foaf:Image">
+            <span class="single__lp"> LP
+              <span class="single__lp-num"> {{single_feat.lp_numbers}} </span>
+            </span>
+          </span>
+        </a>
+        <h3 class="single__head">
+          <a href="{{single_feat.item_link}}" class="single__title">
+            <span> {{single_feat.item_title}} </span>
+          </a>
+            <span class="single__authors">
+              <a href="{{single_feat.item_author_link}}" class="single__author">
+                <span class="single__author-img-wrapper">
+                  <span class="item-wrapper">
+                    <img src="{{single_feat.item_author_image}}" class="item" alt="{{single_feat.item_author_name}}" title="{{single_feat.item_author_name}}">
+                  </span>
+                </span>
+                <strong class="single__author-name">{{single_feat.item_author_name}}</strong>
+              </a>
+            </span>
+          </h3>
+          <div class="single__description">
+            <a href="{{single_feat.item_link}}" class="single__description-link">
+              <p>{{single_feat.item_description}}</p>
+              <span class="single__description-more">Lue lisää aiheesta ›</span>
+            </a>
+          </div>
+
+          <div class="single__actions">
+            <a class="btn primary use-ajax" href="/dcommerce/checkout/node/314" data-dialog-type="modal" data-dialog-options="{"dialogClass":"payment-modal singlepayment-modal","width":"80%","maxWidth":"800px","left":"10%"}">
+              Osta {{single_feat.item_price}}
+            </a>
+            <a href="/dcommerce/subscription-select-page/with-node/314" class="btn use-ajax" data-dialog-type="modal" data-dialog-options="{"dialogClass":"payment-modal","width":"80%","maxWidth":"800px","left":"10%"}">
+              Ryhdy tilaajaksi
+            </a>
+        </div>
+      </div>
+    </div>
+</article>
