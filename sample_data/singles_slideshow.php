@@ -5,6 +5,7 @@
       "cover_image" : "https://longplay.fi/sites/default/files/styles/large/public/2016-12/LP48_varjokansa_bgr_w1600.jpg?itok=U4s-GhDj",
       "single_title": "shadow people",
       "single_author_name" : "Jeanette Björkqvist",
+      "single_author_link" : "/author#juha-kauppinen",
       "single_mobile_description": "Finland live soon outlaws of thousands of people, ...",
       "single_mobile_up_description": "Finland live soon outlaws thousands of people who are afraid to return to their homeland, even though Finland considers the return of ...",
       "single_link" : "/single/varjokansa",

@@ -1,81 +1,54 @@
 <section class="block-section block-section--singles">
   <div class="inner">
     <h2 class="block-section__head">
-      <span class="block-section__head-primary"><font><font class="">
-        Singles <span class="block-section__head-secondary"><font><font class="">or Long Play Long</span>
+      <span class="block-section__head-primary">
+        Singles <span class="block-section__head-secondary">or Long Play Long</span>
       </span>
-      <a href="/single" class="btn"><font><font class=""> View all singles</a>
+      <a href="/single" class="btn"> View all singles</a>
     </h2>
   </div>
   <div class="carousel swiper-container swiper-instance-0 swiper-container-horizontal">
-    <div class="wrapper swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-340px, 0px, 0px);">
-      <div class="form-item lp-user-field-group"></div>
-      <div class="form-item lp-user-field-group"></div>
-
       <!-- Display singles here -->
-      <article ng-repeat="single in singles" class="node single single-maxi single--carousel swiper-slide">
-        <div class="inner">
-          <div class="single__bg-wrapper">
-              <div class="single__bg" style="background-image: url({{single.cover_image}})"></div>
-          </div>
-          <span class="single__lp"> LP
-            <span class="single__lp-num">{{single.lp_number}}</span>
-          </span>
-          <h3 class="single__head">
-            <a href="/single/varjokansa" class="single__title">
-              <span>{{single.single_title}}</span>
-            </a>
-            <div class="single__authors">
-              <a href="/author#jeanette-bjorkqvist" class="single__author">
-                <strong class="single__author-name">{{single.single_author_name}}</strong>
-              </a>
-            </div>
-          </h3>
-          <div class="single__description">
-            <a href="{{single.single_link}}" class="single__description-link">
-                <p class="visible-mobile-up"><font><font class="">
-                  {{single.single_mobile_up_description}}
-                </p>
-                <p class="visible-mobile-range">
-                  {{single.single_mobile_description}}
-                </p>
-                <span class="single__description-more">
-                  Read more about&gt;
-                </span>
-            </a>
-          </div>
-          <div class="single__actions">
-            <a class="btn primary use-ajax" href="{{single.single_checkout_link}}" data-dialog-type="modal" data-dialog-options="{&quot;dialogClass&quot;:&quot;payment-modal singlepayment-modal&quot;,&quot;width&quot;:&quot;80%&quot;,&quot;maxWidth&quot;:&quot;800px&quot;,&quot;left&quot;:&quot;10%&quot;}">
-              Buy {{single.single_price}}
-            </a>
-            <a href="{{single.single_subscription_link}}" class="btn use-ajax" data-dialog-type="modal" data-dialog-options="{&quot;dialogClass&quot;:&quot;payment-modal&quot;,&quot;width&quot;:&quot;80%&quot;,&quot;maxWidth&quot;:&quot;800px&quot;,&quot;left&quot;:&quot;10%&quot;}">
-              Become a subscriber
-            </a>
-          </div>
-        </div>
-
-        <!-- display this section only when there are related sidetones available for the single -->
-        <div class="swiper-nested-container swiper-nested-instance-1 swiper-container-horizontal" id="swiper-295">
-          <div class="swiper-wrapper single--related-short">
-            <div ng-repeat="sidetone in single.single_related_sidetones"  class="sidetone node-nano node swiper-slide swiper-slide-active" style="width: 240px;">
-              <span class="short__icon"></span>
-              <div class="short__title-wrapper">
-                <div class="related-label"><font><font>Related Sidetones: </font></font></div>
-                <a href="{{sidetone.single_sidetone_link}}">
-                  <div class="short__title">
-                    <span>{{sidetone.single_sidetone_title}}</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel__controls-small">
-            <a href="#" class="carousel__prev swiper-button-prev swiper-button-nested-prev-1 swiper-button-disabled" id="swiper-prev-rel-295"><font><font>&lt;</font></font></a>
-            <a href="#" class="carousel__next swiper-button-next swiper-button-nested-next-1" id="swiper-next-rel-295"><font><font>&gt;</font></font></a>
-          </div>
-        </div>
-      </article>
-    </div>
+    <article ng-repeat="single in singles" class="node single single-maxi single--carousel swiper-slide">
+    		<div class="inner">
+    			<div class="single__bg-wrapper">
+    				<div class="single__bg" style="background-image: url({{single.cover_image}})"></div>
+    			</div><span class="single__lp">LP <span class="single__lp-num">{{single.lp_number}}</span></span>
+    			<h3 class="single__head"><a class="single__title" href="{{single.single_link}}"><span>{{single.single_title}}</span></a></h3>
+    			<div class="single__authors">
+    				<h3 class="single__head"><a class="single__author" href="{{single.single_author_link}}"><strong class="single__author-name">{{single.single_author_name}}</strong></a> </h3>
+    			</div>
+    			<div class="single__description">
+    				<a class="single__description-link" href="{{single.single_link}}">
+    				<p class="visible-mobile-up">{{single.single_mobile_up_description}}</p>
+    				<p class="visible-mobile-range">{{single.single_mobile_description}}</p>
+            <span class="single__description-more">Read more about&gt;</span></a>
+    			</div>
+    			<div class="single__actions">
+    				<a class="btn primary use-ajax" data-dialog-options="{"dialogClass":"payment-modal singlepayment-modal","width":"80%","maxWidth":"800px","left":"10%"}" data-dialog-type="modal" href="/dcommerce/checkout/node/295">Buy 4,90 €</a> <a class="btn use-ajax" data-dialog-options="{"dialogClass":"payment-modal","width":"80%","maxWidth":"800px","left":"10%"}" data-dialog-type="modal" href="/dcommerce/subscription-select-page/with-node/295">Become a subscriber</a>
+    			</div>
+    		</div>
+    		<div class="swiper-nested-container swiper-nested-instance-1 swiper-container-horizontal" id="swiper-295">
+    			<div class="swiper-wrapper single--related-short">
+    				<div class="form-item lp-user-field-group"></div>
+    				<div class="form-item lp-user-field-group"></div>
+    				<div ng-repeat="related_side in single.single_related_sidetones" class="sidetone node-nano node swiper-slide swiper-slide-active" style="width: 320px;">
+    					<span class="short__icon"></span>
+    					<div class="short__title-wrapper">
+    						<div class="related-label">
+    							Related Page Sounds:
+    						</div><a href="{{related_side.single_sidetone_link}}">
+    						<div class="short__title">
+    							<span>{{related_side.single_sidetone_title}}</span>
+    						</div></a>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="carousel__controls-small">
+    				<a class="carousel__prev swiper-button-prev swiper-button-nested-prev-1 swiper-button-disabled" href="#" id="swiper-prev-rel-295">&lt;</a> <a class="carousel__next swiper-button-next swiper-button-nested-next-1" href="#" id="swiper-next-rel-295">&gt;</a>
+    			</div>
+    		</div>
+    	</article>
     <div class="carousel__controls">
       <a href="#" class="carousel__prev swiper-button-prev swiper-button-prev-0" id="swiper-prev-singles">&lt;</a>
       <a href="#" class="carousel__next swiper-button-next swiper-button-next-0" id="swiper-next-singles">&gt;</a>
