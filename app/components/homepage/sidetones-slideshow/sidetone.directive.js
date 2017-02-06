@@ -13,6 +13,7 @@ function sidetoneSliderDirective() {
       );
     },
     link: function(scope, element, attrs) {
+      $(element).find('.sidetones-bxslider').bxSlider();
     },
     templateUrl: 'app/components/homepage/sidetones-slideshow/sidetone.tpl.html'
   }

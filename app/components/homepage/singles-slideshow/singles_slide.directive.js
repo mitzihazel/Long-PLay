@@ -1,4 +1,4 @@
-angular.module('longPlay').directive('singleSlideshow', [singleSlideshowDirective]);
+angular.module('longPlay').directive('singleSlideshow', ['$timeout', singleSlideshowDirective]);
 
 function singleSlideshowDirective() {
   return {
@@ -12,7 +12,8 @@ function singleSlideshowDirective() {
         }
       );
     },
-    link: function(scope, element, attrs) {
+    link: function(scope, elm, attr) {
+      $(elm).find('.bxslider').bxSlider();
     },
     templateUrl: 'app/components/homepage/singles-slideshow/singles_slide.tpl.html'
   }

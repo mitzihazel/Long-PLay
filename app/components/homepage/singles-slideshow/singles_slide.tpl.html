@@ -1,4 +1,4 @@
-<section class="block-section block-section--singles">
+<section class="single singles_slider">
   <div class="inner">
     <h2 class="block-section__head">
       <span class="block-section__head-primary">
@@ -7,15 +7,9 @@
       <a href="/single" class="btn"> View all singles</a>
     </h2>
   </div>
-  <ul class="bxslider">
-    <li><img src="/assets/img/longplay.png" /></li>
-    <li><img src="/assets/img/longplay.png" /></li>
-    <li><img src="/assets/img/longplay.png" /></li>
-    <li><img src="/assets/img/longplay.png" /></li>
-  </ul>
-  <div class="carousel swiper-container swiper-instance-0 swiper-container-horizontal">
+  <div class="bxslider">
       <!-- Display singles here -->
-    <article ng-repeat="single in singles" class="node single single-maxi single--carousel swiper-slide">
+    <article ng-repeat="single in singles" class="single-maxi single--carousel">
     		<div class="inner">
     			<div class="single__bg-wrapper">
     				<div class="single__bg" style="background-image: url({{single.cover_image}})"></div>
@@ -31,11 +25,11 @@
             <span class="single__description-more">Read more about&gt;</span></a>
     			</div>
     			<div class="single__actions">
-    				<a class="btn primary use-ajax" data-dialog-options="{"dialogClass":"payment-modal singlepayment-modal","width":"80%","maxWidth":"800px","left":"10%"}" data-dialog-type="modal" href="/dcommerce/checkout/node/295">Buy 4,90 €</a> <a class="btn use-ajax" data-dialog-options="{"dialogClass":"payment-modal","width":"80%","maxWidth":"800px","left":"10%"}" data-dialog-type="modal" href="/dcommerce/subscription-select-page/with-node/295">Become a subscriber</a>
+    				<a class="btn primary use-ajax">Become a subscriber</a>
     			</div>
     		</div>
     		<div ng-if="single.single_related_sidetones != null" class="swiper-nested-container swiper-nested-instance-1 swiper-container-horizontal" id="swiper-295">
-    			<div class="swiper-wrapper single--related-short">
+    			<div class="single--related-short">
     				<div class="form-item lp-user-field-group"></div>
     				<div class="form-item lp-user-field-group"></div>
     				<div ng-repeat="related_side in single.single_related_sidetones" class="sidetone node-nano node swiper-slide swiper-slide-active" style="width: 320px;">
@@ -50,14 +44,14 @@
     					</div>
     				</div>
     			</div>
-    			<div class="carousel__controls-small">
+    			<!-- <div class="carousel__controls-small">
     				<a class="carousel__prev swiper-button-prev swiper-button-nested-prev-1 swiper-button-disabled" href="#" id="swiper-prev-rel-295">&lt;</a> <a class="carousel__next swiper-button-next swiper-button-nested-next-1" href="#" id="swiper-next-rel-295">&gt;</a>
-    			</div>
+    			</div> -->
     		</div>
     	</article>
-    <div class="carousel__controls">
+    <!-- <div class="carousel__controls">
       <a href="#" class="carousel__prev swiper-button-prev swiper-button-prev-0" id="swiper-prev-singles">&lt;</a>
       <a href="#" class="carousel__next swiper-button-next swiper-button-next-0" id="swiper-next-singles">&gt;</a>
-    </div>
+    </div> -->
   </div>
 </section>

@@ -1,0 +1,45 @@
+@media #{$iphone_retina} {
+  .info-section, .info-section--order, .info-section--about-lp {
+    background: #fff url(/themes/longplay/assets/img/longplay-lightgrey.svg) 100% 50% no-repeat;
+    padding: 40px 0;
+    background-size: auto 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+  }
+  .info-section__first, .info-section__second {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .info-section__first h2.color-secondary-hover {
+    color: #88C6B8;
+  }
+  .info-section__first h2 {
+    font-size: 36px;
+  }
+  .info-section__first p {
+    font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+  }
+  #block-subscribeandjointheranks .info-section__first a {
+    color: #D9252A;
+  }
+  .info-section__actions {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+  .info-section__actions .btn, .info-section__actions .btn--primary {
+    display: block;
+    font-size: 18px;
+    border-radius: 0px !important;
+  }
+  div#block-subscribeandjointheranks div {
+    clear: both;
+    margin-bottom: 1em;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+}

@@ -1,0 +1,145 @@
+@media #{$iphone_retina} {
+  .singles_slider {
+    background: #333;
+    padding: 50px 0 20px 0;
+    position: relative;
+    z-index: 10;
+
+    .btn, .btn--primary {
+      margin-top: 30px;
+      width: 250px;
+    }
+  }
+  .bxslider {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  .inner {
+    position: relative;
+    text-align: center;
+  }
+  .block-section__head {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    line-height: 1;
+  }
+  .block-section__head-primary {
+    display: block;
+    text-align: center;
+  }
+  .block-section__head-secondary {
+    color: #666;
+  }
+  .single-maxi.single--carousel {
+    background: #F6F6F6;
+    min-width: 240px;
+    max-width: 320px;
+  }
+  .single-maxi .single__bg-wrapper {
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 0;
+  }
+  .single__description::before {
+    top: 30px;
+  }
+  .single-maxi .single__bg {
+    background-attachment: inherit;
+  }
+  .single--carousel .single__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: .3;
+    z-index: 1;
+  }
+  .single-maxi .single__lp {
+    left: 0;
+    position: relative;
+    margin-left: 0;
+  }
+  .single-maxi .single__description-link {
+    display: block;
+  }
+  .single-maxi .single__description-link > p.visible-mobile-up {
+    display: none;
+  }
+  .single-maxi .single__description-link > p.visible-mobile-range {
+    height: 130px;
+    overflow: hidden;
+    font-size: 18px;
+  }
+  .single-maxi .swiper-nested-container {
+    overflow: hidden;
+    position: relative;
+  }
+  .single--related-short {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 600px;
+    z-index: 5;
+    font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 20px;
+    background: #F6F6F6;
+    text-align: left;
+  }
+  .single .single__description-more, .single--carousel .single__description-more {
+    font-size: 18px;
+  }
+  .single--related-short .short__icon, .single--related-short .short__icon--large {
+    height: 30px;
+    width: 30px;
+  }
+  .short__icon, .short__icon--large {
+    background: #A5DCCF url(/assets/img/quote.svg) 50% 50% no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    background-size: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .single--related-short .short__title-wrapper {
+    display: inline-block;
+    font-size: 15px;
+    width: 220px;
+    text-align: left;
+    vertical-align: middle;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+  }
+  .single--related-short a {
+    padding: 0;
+  }
+  .single-maxi .single--related-short .short__title-wrapper .short__title {
+    font-weight: 500;
+    height: 37px;
+    overflow: hidden;
+  }
+  .short__title {
+    color: #D9252A;
+    text-transform: none;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+  }
+}

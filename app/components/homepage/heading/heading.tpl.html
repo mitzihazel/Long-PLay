@@ -1,5 +1,5 @@
-<article class="single single--featured node-nano2 node-scrollto" ng-repeat="single_feat in single_featured">
-  <a name="elamani-rajan-takana" class="anchor"></a>
+<article class="homepage-singles-feature single single--featured" ng-repeat="single_feat in single_featured">
+  <a name="{{single_feat.item_author_name}}" class="anchor"></a>
   <div class="single__bg-wrapper">
     <div class="single__bg" style="background-image: url({{single_feat.background_image_cover}})"></div>
   </div>
@@ -31,15 +31,15 @@
           <div class="single__description">
             <a href="{{single_feat.item_link}}" class="single__description-link">
               <p>{{single_feat.item_description}}</p>
-              <span class="single__description-more">Lue lisää aiheesta ›</span>
+              <span class="single__description-more">Read More ›</span>
             </a>
           </div>
 
           <div class="single__actions">
-            <a class="btn primary use-ajax" href="/dcommerce/checkout/node/314" data-dialog-type="modal" data-dialog-options="{"dialogClass":"payment-modal singlepayment-modal","width":"80%","maxWidth":"800px","left":"10%"}">
+            <a class="btn primary use-ajax" href="" data-dialog-type="modal">
               Osta {{single_feat.item_price}}
             </a>
-            <a href="/dcommerce/subscription-select-page/with-node/314" class="btn use-ajax" data-dialog-type="modal" data-dialog-options="{"dialogClass":"payment-modal","width":"80%","maxWidth":"800px","left":"10%"}">
+            <a href="" class="btn use-ajax" data-dialog-type="modal">
               Ryhdy tilaajaksi
             </a>
         </div>

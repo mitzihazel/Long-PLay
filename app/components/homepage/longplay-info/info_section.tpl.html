@@ -1,0 +1,13 @@
+<div id="site-info-block" class="info-section info-section--about-lp">
+  <div class="container" ng-repeat="data in info">
+    <div class="info-section__first">
+      <h2>{{data.title}}</h2>
+      <p>{{data.description}}</p>
+    </div>
+    <div class="info-section__second">
+      <div class="info-section__actions">
+        <a href="{{data.link}}" class="btn primary">Read more about</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -9,3 +9,19 @@
 
 @import "variables/**/*";
 @import "components/**/*";
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+body {
+  font-family: "Sentinel A","Sentinel B",serif;
+  font-size: 18px;
+  background: #eee;
+  position: relative;
+}

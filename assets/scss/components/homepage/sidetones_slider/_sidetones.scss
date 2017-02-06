@@ -1,0 +1,139 @@
+@media #{$iphone_retina} {
+  .sidetones_slider {
+    background: #eee;
+    padding: 50px 0 20px 0;
+    position: relative;
+    z-index: 10;
+
+    .shorts {
+      padding-top: 80px;
+      padding-bottom: 10px;
+      width: 100%;
+    }
+    .btn, .btn--primary {
+      margin-top: 30px;
+      width: 250px;
+    }
+    .block-section__head {
+      color: #222;
+    }
+    .block-section__head-primary {
+      display: block;
+      text-align: center;
+    }
+    .block-section--shorts .block-section__head-secondary {
+      color: #999;
+    }
+    .short--carousel .short__icon, .short--carousel .short__icon--large {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      top: -80px;
+      left: 50%;
+      margin-left: -40px;
+      -webkit-background-size: auto;
+      background-size: auto;
+      -webkit-transition: background-color 0.2s;
+      -ms-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+    }
+    .short__head {
+      background: #fff;
+      margin: 20px 0 0 0;
+      padding: 40px 20px 20px;
+    }
+    .short {
+      font-size: 15px;
+      text-align: center;
+      min-width: 240px;
+      max-width: 240px;
+      width: 240px;
+    }
+    .short__date {
+      color: #999;
+      display: block;
+      font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+    }
+    .short .short__title {
+      color: #D9252A;
+      font-size: 18px;
+      font-weight: bold;
+      height: 127px;
+      padding-top: 60px;
+      position: relative;
+      display: block;
+      text-align: center;
+    }
+    .short .short__title::before {
+      content: '';
+      width: 60px;
+      border-top: 2px solid #ddd;
+      position: absolute;
+      left: 50%;
+      margin-left: -30px;
+      top: 30px;
+    }
+    .short .referencing-authors {
+      background-color: #ddd;
+      font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+      height: 120px;
+    }
+    .short__author-img-wrapper {
+      display: inline-block;
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+      border-radius: 50%;
+      text-align: center;
+      margin-right: 10px;
+    }
+    .author-list__img_wrapper {
+      display: inline-block;
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+      border-radius: 50%;
+      text-align: center;
+      position: relative;
+      margin: 0 10px 0 0;
+      top: 0;
+      left: 0;
+    }
+    .author-list__img_wrapper img {
+      max-width: 100%;
+      height: auto;
+    }
+    .short__author-name {
+      font-weight: 500;
+    }
+    .short__related-single {
+      font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+      position: relative;
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-bottom: 0;
+      background: #eee;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 110px;
+      text-align: center;
+    }
+    .short--carousel .short__related-single .single__lp {
+      top: -80px;
+    }
+    .short--carousel .short__related-single .single__title {
+      font-weight: 500;
+      color: #D9252A;
+      margin: 0;
+      font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+    }
+    .short .single__lp {
+      position: relative;
+      left: 50%;
+      margin-left: -40px;
+    }
+  }
+}
