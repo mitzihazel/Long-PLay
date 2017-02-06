@@ -1,4 +1,8 @@
 @media #{$iphone_retina} {
+  /* Remove the pagers on Slider */
+  .bx-pager.bx-default-pager {
+    display: none;
+  }
   .singles_slider {
     background: #333;
     padding: 50px 0 20px 0;

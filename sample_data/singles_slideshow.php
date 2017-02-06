@@ -19,7 +19,7 @@
             "single_sidetone_link" : "/sidetone/yha-harvempi-voisi-harkita-aanestavansa-perussuomalaisia"
           },
           {
-            "single_sidetone_title" : "Fewer and fewer people would consider voting on the basic Finnish",
+            "single_sidetone_title" : "A lot of people like Harry Potter that they copy the accent on the movie.",
             "single_sidetone_link" : "/sidetone/yha-harvempi-voisi-harkita-aanestavansa-perussuomalaisia"
           }
         ]

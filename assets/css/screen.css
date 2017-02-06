@@ -7754,13 +7754,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media only screen and (min-width: 320px) {
+  /**
+  * Effect for all sliders in homepage
+  */
+  .bx-wrapper .bx-viewport {
+    background: transparent;
+    overflow: visible !important;
+  }
+
   .sidetones_slider {
     background: #eee;
     padding: 50px 0 20px 0;
     position: relative;
     z-index: 10;
   }
-  .sidetones_slider .shorts {
+  .sidetones_slider .short {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 240px !important;
+  }
+  .sidetones_slider .sidetones {
     padding-top: 80px;
     padding-bottom: 10px;
     width: 100%;
@@ -7782,9 +7796,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .sidetones_slider .short--carousel .short__icon, .sidetones_slider .short--carousel .short__icon--large {
     width: 80px;
     height: 80px;
-    position: relative;
-    top: -80px;
-    left: 50%;
+    position: absolute;
+    top: -50px;
+    left: 37%;
     margin-left: -40px;
     -webkit-background-size: auto;
     background-size: auto;
@@ -7801,8 +7815,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .sidetones_slider .short {
     font-size: 15px;
     text-align: center;
-    min-width: 240px;
-    max-width: 240px;
     width: 240px;
   }
   .sidetones_slider .short__date {
@@ -7877,7 +7889,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: center;
   }
   .sidetones_slider .short--carousel .short__related-single .single__lp {
-    top: -80px;
+    top: -90px;
   }
   .sidetones_slider .short--carousel .short__related-single .single__title {
     font-weight: 500;
@@ -7886,7 +7898,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
   }
   .sidetones_slider .short .single__lp {
-    position: relative;
+    position: absolute;
     left: 50%;
     margin-left: -40px;
   }
@@ -8164,6 +8176,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media only screen and (min-width: 320px) {
+  /* Remove the pagers on Slider */
+  .bx-pager.bx-default-pager {
+    display: none;
+  }
+
   .singles_slider {
     background: #333;
     padding: 50px 0 20px 0;

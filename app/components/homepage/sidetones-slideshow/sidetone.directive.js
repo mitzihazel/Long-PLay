@@ -1,6 +1,6 @@
-angular.module('longPlay').directive('sidetoneSlider', [sidetoneSliderDirective]);
+angular.module('longPlay').directive('sidetoneSlider', ['$timeout', sidetoneSliderDirective]);
 
-function sidetoneSliderDirective() {
+function sidetoneSliderDirective($timeout) {
   return {
     restrict: 'A',
     controller: function($scope, sidetoneSlider) {
@@ -11,9 +11,16 @@ function sidetoneSliderDirective() {
           $scope.sidetones = response.sidetones;
         }
       );
+
     },
     link: function(scope, element, attrs) {
-      $(element).find('.sidetones-bxslider').bxSlider();
+      $timeout(function() {
+        $(element).find('.sidetones-bxslider').bxSlider({
+          minSlides: 2,
+          maxSlides: 2,
+          slideMargin: 10,
+        });
+      }, 500);
     },
     templateUrl: 'app/components/homepage/sidetones-slideshow/sidetone.tpl.html'
   }
