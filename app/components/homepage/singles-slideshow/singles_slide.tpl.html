@@ -29,18 +29,20 @@
     			</div>
     		</div>
     		<div ng-if="single.single_related_sidetones != null" class="swiper-nested-container swiper-nested-instance-1 swiper-container-horizontal" id="swiper-295">
-    			<div class="single--related-short">
-    				<div ng-repeat="related_side in single.single_related_sidetones" class="sidetone node-nano node swiper-slide swiper-slide-active" style="width: 320px;">
-    					<span class="short__icon"></span>
-    					<div class="short__title-wrapper">
-    						<div class="related-label">
-    							Related Page Sounds:
-    						</div><a href="{{related_side.single_sidetone_link}}">
-    						<div class="short__title">
-    							<span>{{related_side.single_sidetone_title}}</span>
-    						</div></a>
-    					</div>
-    				</div>
+    			<div class="single--related-wrapper">
+            <div class="single--related-short">
+      				<div ng-repeat="related_side in single.single_related_sidetones" class="sidetone node-nano node swiper-slide swiper-slide-active" style="width: 320px;">
+      					<span class="short__icon"></span>
+      					<div class="short__title-wrapper">
+      						<div class="related-label">
+      							Related Page Sounds:
+      						</div><a href="{{related_side.single_sidetone_link}}">
+      						<div class="short__title">
+      							<span>{{related_side.single_sidetone_title}}</span>
+      						</div></a>
+      					</div>
+      				</div>
+            </div>
     			</div>
     			<!-- <div class="carousel__controls-small">
     				<a class="carousel__prev swiper-button-prev swiper-button-nested-prev-1 swiper-button-disabled" href="#" id="swiper-prev-rel-295">&lt;</a> <a class="carousel__next swiper-button-next swiper-button-nested-next-1" href="#" id="swiper-next-rel-295">&gt;</a>

@@ -12,6 +12,10 @@
     .btn, .btn--primary {
       margin-top: 30px;
       width: 250px;
+      font-size: 18px;
+    }
+    .swiper-nested-container .bx-viewport {
+      height: 150px !important;
     }
   }
   .bxslider {
@@ -38,8 +42,15 @@
   }
   .single-maxi.single--carousel {
     background: #F6F6F6;
-    min-width: 240px;
+    width: 240px !important;
     max-width: 320px;
+  }
+  .single--carousel .single__actions {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    padding: 0 20px;
   }
   .single-maxi .single__bg-wrapper {
     position: absolute;
