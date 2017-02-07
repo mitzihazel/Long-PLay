@@ -13,6 +13,9 @@ function headerDirective() {
       );
     },
     link: function(scope, element, attrs) {
+      angular.element('.hamburger-box').click(function() {
+        angular.element('.hamburger-box').toggleClass('active');
+      });
     },
     templateUrl: 'app/shared/header/header.tpl.html'
   }

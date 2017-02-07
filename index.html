@@ -8,9 +8,12 @@
     <!-- Libraries -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/libs/angular/angular.min.js" ></script>
+    <script src="assets/libs/angular-route/angular-route.min.js" ></script>
+    <script src="assets/libs/angular-sanitize/angular-sanitize.min.js" ></script>
 
     <!-- Application -->
     <script src="/app/app.modules.js"> </script>
+    <script src="/app/app.routes.js"> </script>
 
     <!-- =========== Header ================= -->
     <script src="/app/shared/header/header.directive.js"> </script>
@@ -31,6 +34,11 @@
     <!-- =========== Homepage Longplay Info Section ================= -->
     <script src="/app/components/homepage/longplay-info/info_section.directive.js"> </script>
     <script src="/app/components/homepage/longplay-info/info_section.factory.js"> </script>
+
+
+    <!-- ============== SINGLES PAGE ===================== -->
+    <script src="/app/components/singles/singles.directive.js"> </script>
+    <script src="/app/components/singles/singles.factory.js"> </script>
 
     <!-- =========== Footer ================= -->
     <script src="/app/shared/footer/footer.directive.js"> </script>
@@ -56,19 +64,10 @@
     <script src="assets/js/jquery.bxslider/jquery.bxslider.js" ></script>
 
   </head>
-  <body class="main-container">
+  <body class="main-container path-{{path}}">
      <div class="loader" style="display:none;"></div>
 
-     <!-- Page contents -->
-     <section class="page  no-sidebar clearfix">
-       <div class="page_wrapper page__main-content normal open">
-         <div heading></div>
-         <div subscribe></div>
-         <div single-slideshow></div>
-         <div sidetone-slider></div>
-         <div info-block></div>
-       </div>
-     </section>
+     <div ng-view> </div>
 
      <footer footer class="footer-links"> </footer>
 

@@ -7605,6 +7605,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 5px 10px;
   }
 }
+.nav-main__extra .hamburger {
+  display: inline-block;
+  float: right;
+  margin: 0 20px;
+}
+
+.nav-main__extra .hamburger .hamburger-box {
+  width: 60px;
+  height: 60px;
+  display: block;
+  background: url(/assets/img/menu_closed_white.png) 0 0 no-repeat;
+  position: relative;
+  background-size: 40px 22px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.fa-search:before {
+  content: "\f002";
+}
+
+.path-homepage .hamburger {
+  display: none;
+}
+
+/**
+* When active
+*/
+.nav-main__extra .hamburger .hamburger-box.active {
+  background: url(/assets/img/menu_open_white.png) 0 0 no-repeat;
+  background-size: 40px 22px;
+}
+
 @media only screen and (min-width: 320px) {
   .header-main {
     background-color: #fff;
@@ -7677,6 +7710,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #fff;
     width: 100%;
     overflow: hidden;
+    height: 45px;
   }
 
   .nav-main__extra-link, .nav-main__extra-link--search, .nav-main__extra-link--login, .nav-main__extra-link--logout {
@@ -7697,30 +7731,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .nav-main__extra-link--login {
     float: right;
     margin-right: 10px;
-  }
-
-  .nav-main__extra .hamburger {
-    display: inline-block;
-    float: right;
-    margin: 0 20px;
-  }
-
-  .nav-main__extra .hamburger .hamburger-box {
-    width: 60px;
-    height: 60px;
-    display: block;
-    background: url(../assets/img/menu_closed_black.png) 0 0 no-repeat;
-    position: relative;
-    cursor: pointer;
-    margin-top: 4px;
-  }
-
-  .fa-search:before {
-    content: "\f002";
-  }
-
-  .header-no-sidebar .hamburger {
-    display: none;
+    font-size: 16px;
   }
 
   .nav-menu {
@@ -8445,6 +8456,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .singles-page .single__bg-wrapper {
+    position: absolute !important;
   }
 }
 @media only screen and (min-width: 1200px) {

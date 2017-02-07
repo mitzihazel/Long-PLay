@@ -65,6 +65,7 @@
     color: #fff;
     width: 100%;
     overflow: hidden;
+    height: 45px;
   }
   .nav-main__extra-link, .nav-main__extra-link--search, .nav-main__extra-link--login, .nav-main__extra-link--logout {
     display: inline-block;
@@ -81,26 +82,7 @@
   .nav-main__extra-link--login {
     float: right;
     margin-right: 10px;
-  }
-  .nav-main__extra .hamburger {
-    display: inline-block;
-    float: right;
-    margin: 0 20px;
-  }
-  .nav-main__extra .hamburger .hamburger-box {
-    width: 60px;
-    height: 60px;
-    display: block;
-    background: url(../assets/img/menu_closed_black.png) 0 0 no-repeat;
-    position: relative;
-    cursor: pointer;
-    margin-top: 4px;
-  }
-  .fa-search:before {
-    content: "\f002";
-  }
-  .header-no-sidebar .hamburger {
-    display: none;
+    font-size: 16px;
   }
   .nav-menu {
     display: inline-block;

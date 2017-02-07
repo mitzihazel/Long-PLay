@@ -1,1 +1,4 @@
-angular.module('longPlay',[]);
+angular.module('longPlay',[
+  'ngRoute',
+  'ngSanitize'
+]);
