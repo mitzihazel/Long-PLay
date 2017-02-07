@@ -7757,6 +7757,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /**
   * Effect for all sliders in homepage
   */
+  .bx-wrapper {
+    overflow-x: hidden;
+  }
+
   .bx-wrapper .bx-viewport {
     background: transparent;
     overflow: visible !important;

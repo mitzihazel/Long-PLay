@@ -16,23 +16,17 @@ function singleSlideshowDirective($timeout) {
       $timeout(function() {
         $(elm).find('.bxslider').bxSlider({
           mode: 'horizontal',
-          captions: false,
+          infiniteLoop: false,
           minSlides: 2,
           maxSlides: 2,
-          slideWidth: 600,
+          slideWidth: 320,
           slideMargin: 10,
-          nextSelector: '#swiper-next-singles',
-          prevSelector: '#swiper-prev-singles',
         });
         $(elm).find('.single--related-short').bxSlider({
-          mode: 'horizontal',
-          captions: false,
           minSlides: 2,
           maxSlides: 2,
           slideWidth: 600,
           slideMargin: 50,
-          nextSelector: '#swiper--small-next-singles',
-          prevSelector: '#swiper--small-prev-singles',
         });
       }, 500);
     },

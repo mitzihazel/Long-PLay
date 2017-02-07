@@ -2,6 +2,9 @@
   /**
   * Effect for all sliders in homepage
   */
+  .bx-wrapper {
+    overflow-x: hidden; 
+  }
   .bx-wrapper .bx-viewport {
     background: transparent;
     overflow: visible !important;

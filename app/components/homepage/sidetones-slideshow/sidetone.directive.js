@@ -17,13 +17,11 @@ function sidetoneSliderDirective($timeout) {
       $timeout(function() {
         $(element).find('.sidetones-bxslider').bxSlider({
           mode: 'horizontal',
-          captions: false,
+          infiniteLoop: false,
           minSlides: 2,
           maxSlides: 2,
-          slideWidth: 600,
+          slideWidth: 320,
           slideMargin: 10,
-          nextSelector: '#swiper-next-singles',
-          prevSelector: '#swiper-prev-singles',
         });
       }, 500);
     },
