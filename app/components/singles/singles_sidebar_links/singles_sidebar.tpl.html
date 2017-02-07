@@ -1,0 +1,21 @@
+<div class="singles-page-sidebar-wrapper">
+  <div class="aside-content-wrapper">
+    <a ng-repeat="side in singles_side" href="#{{side.item_author_link}}" class="page__aside__item sidebar-item" style="width: 256px;">
+      <span class="page__aside__item_content clearfix">
+        <span class="page__aside__img-wrapper items-single">
+          <span class="item-wrapper">
+            <img src="{{side.single_cover_image}}" width="100" height="100" alt="{{side.item_author_name}}: {{side.item_title}}" typeof="foaf:Image">
+          </span>
+        </span>
+        <span class="page__aside__right-part">
+          <span class="page__aside__first">
+            {{side.publish_date}}, {{side.item_author_name}}
+          </span>
+          <span class="page__aside__title">
+            <span>{{side.item_title}}</span>
+          </span>
+        </span>
+      </span>
+    </a>
+  </div>
+</div>

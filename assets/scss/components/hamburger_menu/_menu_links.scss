@@ -1,0 +1,29 @@
+.nav-main__extra .hamburger {
+  display: inline-block;
+  float: right;
+  margin: 0 20px;
+}
+.nav-main__extra .hamburger .hamburger-box {
+  width: 60px;
+  height: 60px;
+  display: block;
+  background: url(/assets/img/menu_closed_white.png) 0 0 no-repeat;
+  position: relative;
+  background-size: 40px 22px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.fa-search:before {
+  content: "\f002";
+}
+.path-homepage .hamburger {
+  display: none;
+}
+
+/**
+* When active
+*/
+.nav-main__extra .hamburger .hamburger-box.active {
+    background: url(/assets/img/menu_open_white.png) 0 0 no-repeat;
+    background-size: 40px 22px;
+}

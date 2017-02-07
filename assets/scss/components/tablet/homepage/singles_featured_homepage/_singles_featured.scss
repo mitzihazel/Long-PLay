@@ -1,0 +1,24 @@
+@media #{$tablet} {
+  .single .container, .single--carousel .container {
+    margin-top: 100px;
+  }
+  .single .single__description-more, .single--carousel .single__description-more {
+    font-size: 30px;
+    margin-top: 1em;
+  }
+  .single .single__actions, .single--carousel .single__actions {
+    width: 600px;
+  }
+  .single .single__actions > .btn {
+    width: 50%;
+    float: left;
+  }
+  .info-section__first, .info-section__second {
+    text-align: left;
+    float: left;
+    width: 60%;
+  }
+  .info-section__second {
+    width: 40%;
+  }
+}

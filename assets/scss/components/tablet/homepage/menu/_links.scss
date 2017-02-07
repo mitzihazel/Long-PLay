@@ -1,0 +1,9 @@
+@media #{tablet} {
+  .nav-menu {
+    padding: 10px 0px;
+  }
+  .nav-menu__link, .nav-menu__link--active {
+    font-size: 15px;
+    letter-spacing: 2px !important;
+  }
+}

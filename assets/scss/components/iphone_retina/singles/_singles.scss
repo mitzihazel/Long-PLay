@@ -1,0 +1,7 @@
+@media #{$iphone_retina} {
+  .singles-page {
+    .single__bg-wrapper {
+      position: absolute !important;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@media #{$tablet} {
+  div#block-subscribeandjointheranks div {
+    clear: none;
+  }
+  .info-section__actions .btn, .info-section__actions .btn--primary {
+    font-size: 24px;
+  }
+}

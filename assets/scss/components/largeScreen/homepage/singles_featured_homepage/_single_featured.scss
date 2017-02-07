@@ -1,0 +1,21 @@
+@media #{$largeScreen} {
+  .single .container .content {
+    max-width: 950px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .single .single__description {
+    font-weight: 700;
+  }
+  .container {
+    padding: 0 20px !important;
+    margin: 0 auto;
+    width: 1080px !important;
+  }
+  .info-section, .info-section--order, .info-section--about-lp {
+    padding: 80px 0 !important;
+  }
+  .info-section__first h2.color-secondary-hover, .info-section__first h2 {
+    font-size: 36px !important;
+  }
+}

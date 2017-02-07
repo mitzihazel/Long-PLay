@@ -24,6 +24,13 @@ function headerDirective($rootScope) {
         }
 
       });
+
+      /**
+      * Close hamburger-box when user selected already.
+      */
+      scope.$on('selected-single', function(event, args) {
+        angular.element(".hamburger-box").removeClass('active');
+      });
     },
     templateUrl: 'app/shared/header/header.tpl.html'
   }

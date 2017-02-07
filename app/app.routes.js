@@ -5,11 +5,12 @@ angular.module('longPlay').config(function($routeProvider, $locationProvider) {
     templateUrl : "app/shared/landing_page/homepage.view.html"
   })
   .when("/single", {
-    templateUrl : "app/shared/singles/singles.view.html"
+    templateUrl : "app/shared/singles/singles.view.html",
+    reloadOnSearch: false
   })
 
   // use the HTML5 History API
-  $locationProvider.html5Mode(true).hashPrefix('!');
+  $locationProvider.html5Mode(true);
 
 });
 

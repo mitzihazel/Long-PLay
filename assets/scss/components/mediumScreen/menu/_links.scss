@@ -1,0 +1,57 @@
+@media #{$mediumScreen} {
+  .header-main {
+    background-color: transparent !important;
+    color: white;
+  }
+  .nav-main__head {
+    top: 12px;
+    left: 20px;
+    text-indent: 120%;
+    width: 80px;
+    height: 80px;
+    -webkit-background-size: 80px 80px;
+    background-size: 80px 80px;
+  }
+  .nav-main__extra {
+    background: transparent;
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    font-size: 15px;
+    transition: top .5s;
+    -moz-transition: top .5s;
+    -webkit-transition: top .5s;
+    -o-transition: top .5s;
+    z-index: 1;
+    width: 20% !important;
+    overflow: hidden;
+  }
+  .nav-main__extra-link, .nav-main__extra-link--search, .nav-main__extra-link--login, .nav-main__extra-link--logout {
+    margin-left: 20px;
+  }
+  .single__lp {
+    margin-left: 48px !important;
+  }
+  .nav-menu {
+    display: inline-block;
+    font-weight: 500;
+    vertical-align: top;
+    text-transform: uppercase;
+    text-align: center;
+    background: transparent;
+    font-size: 18px;
+    padding: 10px 0px 10px 60px;
+    width: 90%;
+    margin: 35px 0 0 0;
+  }
+  .nav-menu__link, .nav-menu__link--active {
+    display: block;
+    padding: 3px 0;
+    letter-spacing: 2px !important;
+    border-bottom: 4px solid transparent;
+    color: white;
+    margin-top: 4px;
+    font-size: 18px;
+  }
+}

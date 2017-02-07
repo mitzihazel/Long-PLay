@@ -1,0 +1,13 @@
+@media #{$iphone_retina} {
+  .info-section__first h2 {
+    font-size: 24px !important;
+    font-weight: 700;
+    margin-bottom: 1em;
+  }
+  #site-info-block {
+    .btn, .btn--primary {
+      margin-top: 30px;
+      width: 250px;
+    }
+  }
+}

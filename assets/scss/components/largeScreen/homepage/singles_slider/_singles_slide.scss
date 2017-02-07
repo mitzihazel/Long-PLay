@@ -1,0 +1,13 @@
+@media #{$largeScreen} {
+  /**
+  * Both Sliders effect.
+  */
+  .block-section__head-primary, .sidetones_slider .block-section__head-primary {
+    display: inline;
+    text-align: center;
+  }
+  .singles_slider .block-section__head .btn, .sidetones_slider .block-section__head .btn {
+    margin-left: 80px;
+    margin-top: 0;
+  }
+}

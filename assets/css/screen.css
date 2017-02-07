@@ -8505,6 +8505,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 0 22px;
   }
 
+  .page__aside__item.active, .page__aside__item:hover {
+    background: #D0ECE6;
+  }
+
   span.page__aside__item_content.clearfix {
     border-bottom: 1px solid #bdbdbd;
     display: table;
