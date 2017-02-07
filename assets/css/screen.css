@@ -8453,6 +8453,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: auto;
     margin-left: auto;
   }
+
+  .single .single__description {
+    font-weight: 700;
+  }
+
+  .container {
+    padding: 0 20px !important;
+    margin: 0 auto;
+    width: 1080px !important;
+  }
+
+  .info-section, .info-section--order, .info-section--about-lp {
+    padding: 80px 0 !important;
+  }
+
+  .info-section__first h2.color-secondary-hover, .info-section__first h2 {
+    font-size: 36px !important;
+  }
 }
 @media only screen and (min-width: 1200px) {
   /**
@@ -8626,6 +8644,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media only screen and (min-width: 768px) {
+  div#block-subscribeandjointheranks div {
+    clear: none;
+  }
+
   .info-section__actions .btn, .info-section__actions .btn--primary {
     font-size: 24px;
   }
