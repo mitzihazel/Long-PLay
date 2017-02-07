@@ -7763,7 +7763,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .bx-wrapper .bx-viewport {
     background: transparent;
-    overflow: visible !important;
   }
 
   .sidetones_slider {
@@ -7802,7 +7801,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 80px;
     position: absolute;
     top: -50px;
-    left: 37%;
+    left: 50%;
     margin-left: -40px;
     -webkit-background-size: auto;
     background-size: auto;
@@ -8191,6 +8190,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: relative;
     z-index: 10;
   }
+  .singles_slider .bx-wrapper {
+    padding: 0px 15px;
+  }
   .singles_slider .btn, .singles_slider .btn--primary {
     margin-top: 30px;
     width: 250px;
@@ -8445,6 +8447,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin: 0;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .single .container .content {
+    max-width: 950px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /**
+  * Both Sliders effect.
+  */
+  .block-section__head-primary, .sidetones_slider .block-section__head-primary {
+    display: inline;
+    text-align: center;
+  }
+
+  .singles_slider .block-section__head .btn, .sidetones_slider .block-section__head .btn {
+    margin-left: 80px;
+    margin-top: 0;
+  }
+}
 @media only screen and (min-width: 992px) {
   .header-main {
     background-color: transparent !important;
@@ -8517,17 +8540,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: 4em;
   }
 
-  .sidetones_slider .short--carousel .short__icon, .sidetones_slider .short--carousel .short__icon--large {
-    left: 50%;
+  .sidetones_slider .short .single__lp {
+    left: 0;
   }
 }
 @media only screen and (min-width: 992px) {
   .info-section__first h2.color-secondary-hover, .info-section__first h2 {
     font-size: 36px;
-  }
-
-  .single-maxi.single--carousel {
-    margin-left: 15px;
   }
 
   .single-maxi .single--related-short .short__title-wrapper .short__title {
