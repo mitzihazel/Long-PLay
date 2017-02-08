@@ -7670,6 +7670,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transition: all 1s;
   }
 
+  ul.nav-menu a:hover {
+    margin-top: 4px;
+    border-bottom: 4px solid #A5DCCF;
+    color: black;
+    text-decoration: none;
+  }
+
   .nav-main {
     position: relative;
     z-index: 20;
@@ -8730,7 +8737,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     left: -30px;
   }
 }
-@media tablet {
+@media only screen and (min-width: 768px) {
   .nav-menu {
     padding: 10px 0px;
   }
@@ -8783,6 +8790,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .info-section__actions .btn, .info-section__actions .btn--primary {
     font-size: 24px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .path-single .nav-menu {
+    padding: 10px 0;
+  }
+  .path-single .nav-menu__link, .path-single .nav-menu__link--active {
+    letter-spacing: 2px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* Sidebar width from tablet
+  *   -applied to all pages with this sidebar
+  */
+  .singles-page-sidebar-wrapper.active {
+    width: 40%;
+  }
+
+  .aside-content-wrapper {
+    margin-top: 5em;
+    height: 950px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .path-single .singles-page {
+    padding-top: 100px;
+  }
+  .path-single .single .container, .path-single .single--carousel .container {
+    margin-top: 0px;
+  }
+  .path-single .main-content-wrapper.ng-scope {
+    padding-top: 90px;
+  }
+  .path-single .single .single__cover, .path-single .single--carousel .single__cover {
+    width: 150px;
+    height: 200px;
+  }
+  .path-single .single .single__description {
+    font-size: 18px;
+    padding-top: 40px;
+    font-weight: 700;
   }
 }
 a {
