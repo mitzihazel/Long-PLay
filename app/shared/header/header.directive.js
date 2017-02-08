@@ -13,6 +13,26 @@ function headerDirective($rootScope) {
       );
     },
     link: function(scope, element, attrs) {
+      /**
+      * Adding class to Header menu navigation
+      * when scrolling vertically.
+      */
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            $(".header-main").addClass("header-main-smallest");
+            $rootScope.$broadcast('page-scrolled');
+        }
+        else if(scroll == 0) {
+          $(".header-main").removeClass("header-main-smallest");
+          $rootScope.$broadcast('on-top');
+        }
+      });
+
+      /**
+      * function implementations for hamburger-box
+      */
       angular.element('.hamburger-box').click(function() {
         angular.element('.hamburger-box').toggleClass('active');
 

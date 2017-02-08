@@ -26,6 +26,17 @@ function singlesSidebarDirective($rootScope, $location) {
       });
 
       /**
+      * Update the position of Hamburger when Page is scrolled and
+      * Header menu is changed.
+      */
+      scope.$on('page-scrolled', function(event, args) {
+        angular.element(".singles-page-sidebar-wrapper").addClass('up-scrolled');
+      });
+      scope.$on('on-top', function(event, args) {
+        angular.element(".singles-page-sidebar-wrapper").removeClass('up-scrolled');
+      });
+
+      /**
       * Hamburger Menu Options
       */
       scope.$on('menu-opened', function(event, args) {

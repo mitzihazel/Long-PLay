@@ -24,11 +24,11 @@
     -webkit-transition: top .5s;
     -o-transition: top .5s;
     z-index: 1;
-    width: 20% !important;
+    width: 22% !important;
     overflow: hidden;
   }
   .nav-main__extra-link, .nav-main__extra-link--search, .nav-main__extra-link--login, .nav-main__extra-link--logout {
-    margin-left: 20px;
+    margin-left: 44px;
   }
   .single__lp {
     margin-left: 48px !important;
@@ -43,7 +43,7 @@
     font-size: 18px;
     padding: 10px 0px 10px 60px;
     width: 90%;
-    margin: 35px 0 0 0;
+    margin: 15px 0 0 0;
   }
   .nav-menu__link, .nav-menu__link--active {
     display: block;
@@ -52,6 +52,49 @@
     border-bottom: 4px solid transparent;
     color: white;
     margin-top: 4px;
-    font-size: 18px;
+    font-size: 18px !important;
+  }
+  .nav-main__wrapper {
+    padding: 20px 0 25px;
+  }
+  .main-content-wrapper.ng-scope {
+    padding-top: 0px;
+  }
+  .nav-main__extra-link--search {
+    width: 0px;
+  }
+
+  /**
+  * Menu styles when Page is scrolled
+  */
+  header.header-main.header-main-smallest {
+    background-color: white !important;
+
+    .nav-main__wrapper {
+      padding: 10px 0;
+    }
+    .nav-main__head {
+      background-size: 50px 50px;
+    }
+    .nav-main__extra {
+      top: 3px;
+      color: black;
+    }
+    .nav-menu {
+      margin: 0;
+      line-height: 20px;
+      padding: 0px;
+    }
+    .nav-menu__link, .nav-menu__link--active {
+      color: black;
+    }
+    .nav-main__extra .hamburger .hamburger-box {
+      background: url(/assets/img/menu_closed_black.png) 0 0 no-repeat;
+      background-size: 40px 22px;
+    }
+    .nav-main__extra .hamburger .hamburger-box.active {
+      background: url(/assets/img/menu_open_black.png) 0 0 no-repeat;
+      background-size: 40px 22px;
+    }
   }
 }
