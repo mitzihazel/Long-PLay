@@ -1,6 +1,6 @@
-angular.module('longPlay').directive('singlesSidebar', ['$rootScope',singlesSidebarDirective]);
+angular.module('longPlay').directive('singlesSidebar', ['$rootScope', '$location', '$anchorScroll', singlesSidebarDirective]);
 
-function singlesSidebarDirective($rootScope) {
+function singlesSidebarDirective($rootScope, $location, $anchorScroll) {
   return {
     restrict: 'A',
     controller: function($scope, singles) {
@@ -11,6 +11,14 @@ function singlesSidebarDirective($rootScope) {
             $scope.singles_side = response.singles;
         }
       );
+
+      /**
+      * Implementing anchorScroll
+      */
+      $scope.scrollTo = function(id) {
+        $location.hash(id);
+        $anchorScroll();
+     }
     },
     link: function(scope, element, attrs) {
       angular.element(".aside-content-wrapper").click(function() {

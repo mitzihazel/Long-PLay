@@ -7925,7 +7925,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .anchor {
     display: block;
     position: relative;
-    top: -200px;
+    top: -150px;
     visibility: hidden;
   }
 
@@ -8544,14 +8544,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media only screen and (min-width: 320px) {
+  .main-content-wrapper.ng-scope {
+    position: relative;
+    padding-top: 110px;
+    z-index: 1;
+  }
+
   .singles-page {
-    padding-top: 100px !important;
+    padding-top: 40px;
   }
   .singles-page .single__bg-wrapper {
     position: absolute !important;
-  }
-  .singles-page .container {
-    margin-top: -2.5em;
   }
   .singles-page .single__cover-img-wrapper {
     width: 150px;

@@ -1,12 +1,14 @@
 @media #{$iphone_retina} {
+  .main-content-wrapper.ng-scope {
+    position: relative;
+    padding-top: 110px;
+    z-index: 1;
+  }
   .singles-page {
-    padding-top: 100px !important;
+    padding-top: 40px;
 
     .single__bg-wrapper {
       position: absolute !important;
-    }
-    .container {
-      margin-top: -2.5em;
     }
     .single__cover-img-wrapper {
       width: 150px;
