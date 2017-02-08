@@ -1,7 +1,19 @@
 @media #{$iphone_retina} {
   .singles-page {
+    padding-top: 100px !important;
+
     .single__bg-wrapper {
       position: absolute !important;
+    }
+    .container {
+      margin-top: -2.5em;
+    }
+    .single__cover-img-wrapper {
+      width: 150px;
+      height: 200px;
+    }
+    .single__cover-img-wrapper img {
+      height: 200px;
     }
   }
 }

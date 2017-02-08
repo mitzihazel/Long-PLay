@@ -8,7 +8,7 @@
         <div class="content">
           <a href="{{single.item_link}}" class="single__cover">
             <span class="single__cover-img-wrapper">
-              <img src="{{single.single_cover_image}}" width="360" height="480" alt="{{single.item_author_name}}: {{single.item_title}}" typeof="foaf:Image">
+              <img bn-lazy-src="{{single.single_cover_image}}" width="360" height="480" alt="{{single.item_author_name}}: {{single.item_title}}" typeof="foaf:Image">
               <span class="single__lp"> LP
                 <span class="single__lp-num"> {{single.lp_numbers}} </span>
               </span>
@@ -22,7 +22,7 @@
                 <a href="/author#{{single.item_author_link}}" class="single__author">
                   <span class="single__author-img-wrapper">
                     <span class="item-wrapper">
-                      <img src="{{single.item_author_image}}" class="item" alt="{{single.item_author_name}}" title="{{single.item_author_name}}">
+                      <img bn-lazy-src="{{single.item_author_image}}" class="item" alt="{{single.item_author_name}}" title="{{single.item_author_name}}">
                     </span>
                   </span>
                   <strong class="single__author-name">{{single.item_author_name}}</strong>

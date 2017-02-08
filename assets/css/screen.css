@@ -8544,8 +8544,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media only screen and (min-width: 320px) {
+  .singles-page {
+    padding-top: 100px !important;
+  }
   .singles-page .single__bg-wrapper {
     position: absolute !important;
+  }
+  .singles-page .container {
+    margin-top: -2.5em;
+  }
+  .singles-page .single__cover-img-wrapper {
+    width: 150px;
+    height: 200px;
+  }
+  .singles-page .single__cover-img-wrapper img {
+    height: 200px;
   }
 }
 @media only screen and (min-width: 1200px) {
