@@ -18,11 +18,20 @@ function singlesSidebarDirective($rootScope, $location) {
       $scope.scrollTo = function(id) {
         $location.hash(id);
         anchorSmoothScroll.scrollTo(id);
+        angular.element(".aside-content-wrapper a" ).removeClass('active');
+        angular.element(".aside-content-wrapper a[href=#"+ id +"]" ).addClass('active');
      }
     },
     link: function(scope, element, attrs) {
-      angular.element(".aside-content-wrapper").click(function() {
-        $rootScope.$broadcast('selected-single');
+      $(window).resize(function(){
+        var screenSize = window.innerWidth;
+
+        // we only need this effect when on Small screen sizes
+        if (screenSize < 1200 ) {
+          angular.element(".aside-content-wrapper").click(function() {
+            $rootScope.$broadcast('selected-single');
+          });
+        }
       });
 
       /**

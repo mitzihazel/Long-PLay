@@ -7392,7 +7392,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-@media only screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .path-single .main-content-wrapper.ng-scope {
     padding-top: 80px;
   }
@@ -7400,7 +7400,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-top: 100px;
   }
 }
-@media only screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .path-single .aside-content-wrapper {
     margin-top: 5em;
   }
@@ -7528,7 +7528,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 500;
   font-style: italic;
 }
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .page-footer {
     font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
     font-size: 15px;
@@ -7654,7 +7654,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: 40px 22px;
 }
 
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .header-main {
     background-color: #fff;
     padding-top: 0;
@@ -7787,7 +7787,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     letter-spacing: normal;
   }
 }
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   /**
   * Effect for all sliders in homepage
   */
@@ -7940,7 +7940,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: -40px;
   }
 }
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .single--featured {
     padding-top: 0;
   }
@@ -8212,7 +8212,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%;
   }
 }
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   /* Remove the pagers on Slider */
   .bx-pager.bx-default-pager {
     display: none;
@@ -8408,7 +8408,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     hyphens: auto;
   }
 }
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .info-section__first h2 {
     font-size: 24px !important;
     font-weight: 700;
@@ -8420,7 +8420,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 250px;
   }
 }
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .info-section, .info-section--order, .info-section--about-lp {
     background: #fff url(/themes/longplay/assets/img/longplay-lightgrey.svg) 100% 50% no-repeat;
     padding: 40px 0;
@@ -8481,7 +8481,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin: 0;
   }
 }
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .singles-page-sidebar-wrapper {
     display: block;
     float: right;
@@ -8566,7 +8566,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-weight: bold;
   }
 }
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .main-content-wrapper.ng-scope {
     position: relative;
     padding-top: 110px;
@@ -8587,7 +8587,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 200px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .single .container .content {
     max-width: 950px;
     margin-right: auto;
@@ -8612,7 +8612,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 36px !important;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   /**
   * Both Sliders effect.
   */
@@ -8626,7 +8626,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: 0;
   }
 }
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+  .path-single .nav-main__extra {
+    width: 27% !important;
+  }
+  .path-single .nav-menu {
+    width: 90%;
+  }
+  .path-single .nav-menu__item {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .path-single .nav-main__extra-link, .path-single .nav-main__extra-link--search, .path-single .nav-main__extra-link--login, .path-single .nav-main__extra-link--logout {
+    margin-left: 77px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .path-single .single__bg {
+    position: absolute !important;
+    background-attachment: fixed !important;
+  }
+  .path-single .container.push-aside {
+    padding-right: 300px !important;
+  }
+}
+@media screen and (min-width: 992px) {
   .sidetones .bx-wrapper {
     margin-top: -3em;
   }
@@ -8639,7 +8663,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     left: 0;
   }
 }
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .info-section__first h2.color-secondary-hover, .info-section__first h2 {
     font-size: 36px;
   }
@@ -8674,7 +8698,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     left: -30px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .header-main {
     background-color: transparent !important;
     color: white;
@@ -8782,7 +8806,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-size: 40px 22px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .path-single {
     /* Menu */
   }
@@ -8799,7 +8823,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 43px !important;
   }
 }
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .path-single .singles-page-sidebar-wrapper.active {
     width: 30%;
   }
@@ -8810,7 +8834,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: -3em;
   }
 }
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .path-single .single__bg {
     position: static;
     background-attachment: inherit;
@@ -8831,7 +8855,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -90px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav-menu {
     padding: 10px 0px;
   }
@@ -8841,7 +8865,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     letter-spacing: 2px !important;
   }
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .single .container, .single--carousel .container {
     margin-top: 100px;
   }
@@ -8870,14 +8894,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 40%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .single-maxi.single--carousel {
     background: #F6F6F6;
     width: 320px !important;
     max-width: 320px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   div#block-subscribeandjointheranks div {
     clear: none;
   }
@@ -8886,7 +8910,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 24px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .path-single .nav-menu {
     padding: 10px 0;
   }
@@ -8894,7 +8918,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     letter-spacing: 2px !important;
   }
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   /* Sidebar width from tablet
   *   -applied to all pages with this sidebar
   */
@@ -8907,7 +8931,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 950px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .path-single .singles-page {
     padding-top: 100px;
   }
