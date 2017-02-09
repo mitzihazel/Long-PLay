@@ -1,12 +1,9 @@
 @media #{$mediumScreen} {
-  .aside-content-wrapper {
-    margin-top: 6em !important;
-  }
   .page-sidebar-wrapper.active.up-scrolled {
     margin-top: -3em;
   }
   .page-sidebar-wrapper.active {
-    width: 30% !important;
+    width: 25% !important;
   }
   .path-sidetone .anchor {
     top: -200px !important;

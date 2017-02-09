@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html ng-app="longPlay">
+<html ng-app="longPlay" ng-init="load()">
   <head profile="http://sb02.wembassy.com">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,16 +36,25 @@
     <script src="/app/components/homepage/longplay-info/info_section.factory.js"> </script>
 
 
-    <!-- ============== SINGLES PAGE ===================== -->
-    <script src="/app/components/singles/singles.directive.js"> </script>
-    <script src="/app/components/singles/singles.factory.js"> </script>
 
     <!-- ============= HAMBURGER MENU ================= -->
     <script src="/app/components/hamburger_menu/hamburger_menu.directive.js"> </script>
 
+    <!-- ============== SINGLES PAGE ===================== -->
+    <script src="/app/components/singles/singles.directive.js"> </script>
+    <script src="/app/components/singles/singles.factory.js"> </script>
+
     <!-- ============== SIDETONES PAGE ===================== -->
     <script src="/app/components/sidetones/sidetones.directive.js"> </script>
     <script src="/app/components/sidetones/sidetones.factory.js"> </script>
+
+    <!-- ============== BOOKS PAGE ===================== -->
+    <script src="/app/components/books/books.directive.js"> </script>
+    <script src="/app/components/books/books.factory.js"> </script>
+
+    <!-- ============== AUHTORS PAGE ===================== -->
+    <script src="/app/components/authors/authors.directive.js"> </script>
+    <script src="/app/components/authors/authors.factory.js"> </script>
 
     <!-- =========== Lazy Loader Directive ================ -->
     <script src="/app/components/image_lazy_loading/lazy_loader.directive.js"> </script>

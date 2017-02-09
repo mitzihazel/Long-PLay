@@ -1,14 +1,18 @@
 <div class="page-sidebar-wrapper">
   <div class="aside-content-wrapper">
+    <header ng-show="currentLocation === '/author'">
+      <p>Delivery</p>
+    </header>
     <a ng-repeat="side in side_menus" href="#{{side.nid}}" ng-click="scrollTo(side.nid)" class="page__aside__item sidebar-item" style="width: 256px;">
       <span class="page__aside__item_content clearfix">
         <span class="page__aside__img-wrapper items-single">
           <span class="item-wrapper">
-            <img bn-lazy-src="{{side.field_cover_image}}" width="100" height="100" alt="{{side.field_author}}: {{side.title}}" typeof="foaf:Image">
+            <img ng-hide="currentLocation === '/author'" bn-lazy-src="{{side.field_cover_image}}" width="100" height="100" alt="{{side.field_author}}: {{side.title}}" typeof="foaf:Image">
+            <img ng-show="currentLocation === '/author'" bn-lazy-src="{{side.field_image}}" width="100" height="100" alt="{{side.field_author}}: {{side.title}}" typeof="foaf:Image">
           </span>
         </span>
         <span class="page__aside__right-part">
-          <span class="page__aside__first">
+          <span class="page__aside__first" ng-hide="currentLocation === '/author'">
             {{side.field_pub_date}}{{side.created}}, {{side.field_author}}
           </span>
           <span class="page__aside__title">

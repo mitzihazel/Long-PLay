@@ -1,0 +1,38 @@
+<article ng-repeat="book in books" class="single single--featured scrollto">
+	<a class="anchor" id="{{book.nid}}" name="{{book.nid}}"></a>
+	<div class="single__bg-wrapper">
+		<div class="single__bg" style="background-image: url({{book.field_cover_image}})"></div>
+	</div>
+	<div class="container" style="padding-right: 0px;">
+		<div class="content">
+			<a class="single__cover" href="/book/skuggfolk">
+        <span class="single__cover-img-wrapper">
+          <img alt="{{book.title}}" height="480" bn-lazy-src="{{book.field_cover_image}}" typeof="foaf:Image" width="360">
+          <span class="single__lp">EB
+            <span class="single__lp-num">14</span>
+          </span>
+        </span>
+      </a>
+	    <h3 class="single__head"><a class="single__title" href="/book/{{book.nid}}"><span>{{book.title}}</span></a></h3>
+			<div class="single__authors">
+				<h3 class="single__head">
+          <a class="single__author" href="/author#jeanette-bjorkqvist">
+            <span class="single__author-img-wrapper">
+              <span class="item-wrapper">
+                <img src="{{book.field_image}}" class="item">
+              </span>
+            </span>
+            <strong class="single__author-name">{{book.field_author}}</strong>
+          </a>
+        </h3>
+			</div>
+			<div class="single__description">
+				<a class="single__description-link" href="/book/skuggfolk">
+				<p>{{book.body}}</p><span class="single__description-more">Lue lisää aiheesta ›</span></a>
+			</div>
+			<div class="single__actions single__actions-button">
+				<a class="btn primary use-ajax" data-dialog-options="{&quot;dialogClass&quot;:&quot;payment-modal singlepayment-modal&quot;,&quot;width&quot;:&quot;80%&quot;,&quot;maxWidth&quot;:&quot;800px&quot;,&quot;left&quot;:&quot;10%&quot;}" data-dialog-type="modal" href="/dcommerce/checkout/node/310">Osta 4,90 €</a>
+			</div>
+		</div>
+	</div>
+</article>

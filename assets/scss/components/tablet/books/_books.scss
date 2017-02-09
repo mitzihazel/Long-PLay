@@ -1,0 +1,22 @@
+@media #{$tablet} {
+  .path-book {
+    .main-content-wrapper.ng-scope {
+      padding-top: 60px;
+    }
+    .aside-content-wrapper {
+      margin-top: 5em;
+    }
+    .single .single__description {
+      font-size: 18px;
+      padding-top: 40px;
+      font-weight: 700;
+    }
+    .single .single__actions > .btn {
+      width: 100%;
+      float: none;
+    }
+    .single .container, .single--carousel .container {
+      margin-top: 0px;
+    }
+  }
+}

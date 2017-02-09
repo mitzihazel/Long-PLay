@@ -1,26 +1,41 @@
-angular.module('longPlay').directive('hamburgerMenu', ['$rootScope', '$location', singlesSidebarDirective]);
+angular.module('longPlay').directive('hamburgerMenu', ['$rootScope', '$location', '$timeout',  singlesSidebarDirective]);
 
-function singlesSidebarDirective($rootScope, $location) {
+function singlesSidebarDirective($rootScope, $location, $timeout)   {
   return {
     restrict: 'A',
-    controller: function($scope, singles, sidetones, anchorSmoothScroll) {
+    controller: function($scope, singles, sidetones, books, authors, anchorSmoothScroll) {
       $scope.side_menus = [];
+      $scope.currentLocation = $location.path();
 
       /**
       * Check the current page displayed
       * - render the sidebar content based on it.
       */
-      if($location.path() === '/single') {
+      if( $scope.currentLocation === '/single') {
         singles.index()
           .then(function(response) {
               $scope.side_menus = response.singles;
           }
         );
       }
-      else if($location.path() === '/sidetone') {
+      else if( $scope.currentLocation === '/sidetone') {
         sidetones.index()
           .then(function(response) {
             $scope.side_menus = response.sidetones;
+          }
+        );
+      }
+      else if( $scope.currentLocation === '/book') {
+        books.index()
+          .then(function(response) {
+            $scope.side_menus = response.books;
+          }
+        );
+      }
+      else if( $scope.currentLocation === '/author') {
+        authors.index()
+          .then(function(response) {
+            $scope.side_menus = response;
           }
         );
       }
@@ -36,11 +51,12 @@ function singlesSidebarDirective($rootScope, $location) {
      }
     },
     link: function(scope, element, attrs) {
-      $(window).resize(function(){
+      $timeout(function() {
         var screenSize = window.innerWidth;
+        console.log(screenSize);
 
         // we only need this effect when on Small screen sizes
-        if (screenSize < 1200 ) {
+        if (screenSize < 992 ) {
           angular.element(".aside-content-wrapper").click(function() {
             $rootScope.$broadcast('selected-single');
           });

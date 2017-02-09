@@ -1,0 +1,38 @@
+@media #{$iphone_retina} {
+  .path-book {
+    .main-content-wrapper.ng-scope {
+      padding-top: 100px;
+    }
+    .single__bg {
+      background-attachment: inherit;
+      position: static;
+    }
+    .single, .single--carousel {
+      padding-top: 40px;
+    }
+    .single:first-child .single__bg-wrapper {
+      position: fixed;
+    }
+    .single .single__bg-wrapper, .single--carousel .single__bg-wrapper {
+      position: absolute;
+    }
+    .single__cover-img-wrapper {
+      width: 150px;
+      height: 200px;
+    }
+    .single__cover-img-wrapper img {
+      height: 200px;
+    }
+    .single .single__cover, .single--carousel .single__cover {
+      display: block;
+      margin: 0 auto 55px auto;
+      width: 150px;
+      height: 200px;
+    }
+    .single .single__description-more, .single--carousel .single__description-more {
+      padding-top: 40px;
+      font-size: 30px;
+      font-weight: normal;
+    }
+  }
+}

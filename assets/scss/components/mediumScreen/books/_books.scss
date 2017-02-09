@@ -1,0 +1,13 @@
+@media #{$mediumScreen} {
+  .path-book {
+    .anchor {
+      top: -95px;
+    }
+    .aside-content-wrapper {
+      margin-top: 6em;
+    }
+    .nav-main__extra {
+      width: 32% !important
+    }
+  }
+}

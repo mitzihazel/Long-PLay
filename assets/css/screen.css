@@ -7393,6 +7393,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @media screen and (min-width: 480px) {
+  .path-book .main-content-wrapper.ng-scope {
+    padding-top: 80px;
+  }
+  .path-book .anchor {
+    top: -120px;
+  }
+}
+@media screen and (min-width: 480px) {
   .path-single .main-content-wrapper.ng-scope {
     padding-top: 80px;
   }
@@ -7402,7 +7410,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @media screen and (min-width: 480px) {
   .aside-content-wrapper {
-    margin-top: 5em !important;
+    margin-top: 5em;
     height: 230px !important;
   }
 
@@ -7787,6 +7795,159 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: 4px;
     font-size: 12px;
     letter-spacing: normal;
+  }
+}
+@media screen and (min-width: 320px) {
+  b, strong {
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .path-author {
+    /**
+    * Related singles styles
+    */
+  }
+  .path-author .main-content-wrapper.ng-scope {
+    padding-top: 140px;
+  }
+  .path-author .authors-page-main-wrapper.ng-scope {
+    padding-left: 0;
+    padding-right: 0;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .path-author .author-teaser {
+    margin-bottom: 50px;
+    padding-top: 100px;
+  }
+  .path-author .anchor {
+    top: -240px;
+  }
+  .path-author .author-list__header {
+    background: #333;
+    position: relative;
+    padding: 120px 0 30px 0;
+  }
+  .path-author .author-list__img_wrapper {
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .path-author .author-list__img_wrapper img {
+    max-width: 100%;
+    height: auto;
+  }
+  .path-author .author-list__author-name {
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+  }
+  .path-author .author-list__content {
+    background: #fff;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 18px;
+    font-family: "Sentinel A","Sentinel B",serif;
+    line-height: 1.2;
+  }
+  .path-author .author-list__singles {
+    background: #989898;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 22px 0;
+  }
+  .path-author .author-list__singles-head {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .path-author .single__cover-img-wrapper img {
+    height: 200px;
+  }
+  .path-author .single__cover-img-wrapper {
+    width: 150px;
+    height: 200px;
+  }
+  .path-author .bx-wrapper .bx-viewport {
+    height: 320px !important;
+  }
+  .path-author article.authors-related-singles {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .path-author .single__lp {
+    left: 0px;
+    margin-left: 0 !important;
+  }
+  .path-author .single__title {
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .path-author .aside-content-wrapper header {
+    font-size: 20px;
+    height: 131px;
+    text-align: center;
+    border-bottom: 1px solid #bdbdbd;
+    margin: 0 22px;
+  }
+  .path-author .aside-content-wrapper header p {
+    position: relative;
+    font-weight: 500;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 34px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .path-book .main-content-wrapper.ng-scope {
+    padding-top: 100px;
+  }
+  .path-book .single__bg {
+    background-attachment: inherit;
+    position: static;
+  }
+  .path-book .single, .path-book .single--carousel {
+    padding-top: 40px;
+  }
+  .path-book .single:first-child .single__bg-wrapper {
+    position: fixed;
+  }
+  .path-book .single .single__bg-wrapper, .path-book .single--carousel .single__bg-wrapper {
+    position: absolute;
+  }
+  .path-book .single__cover-img-wrapper {
+    width: 150px;
+    height: 200px;
+  }
+  .path-book .single__cover-img-wrapper img {
+    height: 200px;
+  }
+  .path-book .single .single__cover, .path-book .single--carousel .single__cover {
+    display: block;
+    margin: 0 auto 55px auto;
+    width: 150px;
+    height: 200px;
+  }
+  .path-book .single .single__description-more, .path-book .single--carousel .single__description-more {
+    padding-top: 40px;
+    font-size: 30px;
+    font-weight: normal;
   }
 }
 @media screen and (min-width: 320px) {
@@ -8805,6 +8966,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media screen and (min-width: 1200px) {
+  .path-sidetone .short-list__author-img-wrapper {
+    left: 35%;
+  }
+}
+@media screen and (min-width: 1200px) {
   .path-single .nav-main__extra {
     width: 27% !important;
   }
@@ -8827,6 +8993,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .path-single .single__bg {
     position: absolute !important;
     background-attachment: fixed !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .path-book .anchor {
+    top: -95px;
+  }
+  .path-book .aside-content-wrapper {
+    margin-top: 6em;
+  }
+  .path-book .nav-main__extra {
+    width: 32% !important;
   }
 }
 @media screen and (min-width: 992px) {
@@ -9006,7 +9183,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @media screen and (min-width: 992px) {
   .path-sidetone .aside-content-wrapper {
-    margin-top: 6em !important;
+    margin-top: 6em;
   }
 }
 @media screen and (min-width: 992px) {
@@ -9027,16 +9204,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media screen and (min-width: 992px) {
-  .aside-content-wrapper {
-    margin-top: 6em !important;
-  }
-
   .page-sidebar-wrapper.active.up-scrolled {
     margin-top: -3em;
   }
 
   .page-sidebar-wrapper.active {
-    width: 30% !important;
+    width: 25% !important;
   }
 
   .path-sidetone .anchor {
@@ -9052,6 +9225,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: static;
     background-attachment: inherit;
   }
+  .path-single .aside-content-wrapper {
+    margin-top: 6em;
+  }
   .path-single .main-content-wrapper.ng-scope {
     padding-top: 0px !important;
   }
@@ -9063,6 +9239,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   .path-single .single__lp {
     margin-left: 35px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .path-book .main-content-wrapper.ng-scope {
+    padding-top: 60px;
+  }
+  .path-book .aside-content-wrapper {
+    margin-top: 5em;
+  }
+  .path-book .single .single__description {
+    font-size: 18px;
+    padding-top: 40px;
+    font-weight: 700;
+  }
+  .path-book .single .single__actions > .btn {
+    width: 100%;
+    float: none;
+  }
+  .path-book .single .container, .path-book .single--carousel .container {
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -9159,13 +9355,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   .aside-content-wrapper {
-    margin-top: 5em !important;
     height: 950px !important;
   }
 }
 @media screen and (min-width: 768px) {
   .path-single .singles-page {
     padding-top: 100px;
+  }
+  .path-single .aside-content-wrapper {
+    margin-top: 5em;
+  }
+  .path-single .addtocart-actions .btn {
+    display: block;
+    width: 50%;
+    float: left;
   }
   .path-single .single .container, .path-single .single--carousel .container {
     margin-top: 0px;

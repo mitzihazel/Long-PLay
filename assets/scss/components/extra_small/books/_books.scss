@@ -1,0 +1,10 @@
+@media #{$extra_small} {
+  .path-book {
+    .main-content-wrapper.ng-scope {
+      padding-top: 80px;
+    }
+    .anchor {
+      top: -120px;
+    }
+  }
+}

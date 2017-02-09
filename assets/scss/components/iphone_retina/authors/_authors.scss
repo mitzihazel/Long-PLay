@@ -1,0 +1,109 @@
+@media #{$iphone_retina} {
+  b, strong {
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .path-author {
+    .main-content-wrapper.ng-scope {
+      padding-top: 140px;
+    }
+    .authors-page-main-wrapper.ng-scope {
+      padding-left: 0;
+      padding-right: 0;
+      width: 88%;
+      margin-left: 6%;
+      margin-right: 6%;
+    }
+    .author-teaser {
+      margin-bottom: 50px;
+      padding-top: 100px;
+    }
+    .anchor {
+      top: -240px;
+    }
+    .author-list__header {
+      background: #333;
+      position: relative;
+      padding: 120px 0 30px 0;
+    }
+    .author-list__img_wrapper {
+      position: absolute;
+      left: 50%;
+      top: -100px;
+      margin-left: -100px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .author-list__img_wrapper img {
+      max-width: 100%;
+      height: auto;
+    }
+    .author-list__author-name {
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+    }
+    .author-list__content {
+      background: #fff;
+      overflow: hidden;
+      padding: 20px;
+      font-size: 18px;
+      font-family: "Sentinel A","Sentinel B",serif;
+      line-height: 1.2;
+    }
+
+    /**
+    * Related singles styles
+    */
+    .author-list__singles {
+      background: #989898;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0 22px 0;
+    }
+    .author-list__singles-head {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .single__cover-img-wrapper img {
+      height: 200px;
+    }
+    .single__cover-img-wrapper {
+      width: 150px;
+      height: 200px;
+    }
+    .bx-wrapper .bx-viewport {
+      height: 320px !important;
+    }
+    // .author-list__covers .wrapper.swiper-wrapper {
+    //   float: none !important;
+    //   list-style: none;
+    //   position: relative;
+    //   width: 282px;
+    //   display: inline;
+    // }
+    article.authors-related-singles {
+      padding-top: 25px;
+      padding-bottom: 10px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      // float: left;
+      // display: inline-block;
+      // margin-left: 15px;
+    }
+    .single__lp {
+      left: 0px;
+      margin-left: 0 !important;
+    }
+    .single__title {
+      padding-top: 40px;
+    }
+  }
+}

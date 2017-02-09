@@ -1,0 +1,20 @@
+@media #{$iphone_retina} {
+  .path-author {
+    .aside-content-wrapper header {
+        font-size: 20px;
+        height: 131px;
+        text-align: center;
+        border-bottom: 1px solid #bdbdbd;
+        margin: 0 22px;
+
+      p {
+          position: relative;
+          font-weight: 500;
+          margin: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          line-height: 34px;
+      }
+    }
+  }
+}
