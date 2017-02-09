@@ -1,13 +1,14 @@
 @media #{$mediumScreen} {
-  .path-single {
-    .singles-page-sidebar-wrapper.active {
-      width: 30%;
-    }
-    .aside-content-wrapper {
-      margin-top: 6em;
-    }
-    .singles-page-sidebar-wrapper.active.up-scrolled {
-      margin-top: -3em;
-    }
+  .aside-content-wrapper {
+    margin-top: 6em !important;
+  }
+  .page-sidebar-wrapper.active.up-scrolled {
+    margin-top: -3em;
+  }
+  .page-sidebar-wrapper.active {
+    width: 30% !important;
+  }
+  .path-sidetone .anchor {
+    top: -200px !important;
   }
 }

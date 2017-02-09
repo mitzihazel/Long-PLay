@@ -1,8 +1,9 @@
 @media #{$extra_small} {
+  .aside-content-wrapper {
+    margin-top: 5em !important;
+    height: 230px !important;
+  }
   .path-single {
-    .aside-content-wrapper {
-      margin-top: 5em;
-    }
     a.page__aside__item.sidebar-item.ng-scope {
       width: 100% !important;
     }

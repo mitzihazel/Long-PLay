@@ -7401,9 +7401,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media screen and (min-width: 480px) {
-  .path-single .aside-content-wrapper {
-    margin-top: 5em;
+  .aside-content-wrapper {
+    margin-top: 5em !important;
+    height: 230px !important;
   }
+
   .path-single a.page__aside__item.sidebar-item.ng-scope {
     width: 100% !important;
   }
@@ -7810,20 +7812,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .aside-content-wrapper {
     box-shadow: -1px 0px 6px grey;
-    height: 776px;
+    height: 363px;
     max-height: 100%;
     overflow: hidden;
     position: relative;
-  }
-
-  .aside-content-wrapper {
-    box-shadow: -1px 0px 6px grey;
-    height: 776px;
-    max-height: 100%;
-    overflow: scroll;
-    position: relative;
     background-color: #F6F6F6;
-    height: 400px;
     overflow-y: scroll;
     margin-top: 6.5em;
   }
@@ -7832,6 +7825,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
     color: #7c7c7c;
     padding: 0 22px;
+    width: 100% !important;
   }
 
   .page__aside__item.active, .page__aside__item:hover {
@@ -8572,6 +8566,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     * Singles related slider styles
     */
   }
+  .path-sidetone h2 {
+    font-size: 24px;
+  }
+  .path-sidetone .anchor {
+    top: -250px !important;
+  }
   .path-sidetone .sidetones-page-wrapper.ng-scope {
     padding-left: 0;
     padding-right: 0;
@@ -8581,9 +8581,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: relative;
     padding-top: 65px;
     z-index: 1;
-  }
-  .path-sidetone .sidetones-main-wrapper {
-    padding: 0px 10px;
   }
   .path-sidetone .short-list__short:last-child {
     margin-bottom: 1em;
@@ -8652,6 +8649,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .path-sidetone .short-full__title {
     margin-bottom: 10px;
     padding: 0 11.1% 0 0;
+    font-weight: 700;
+    color: black;
+    line-height: 1.3em;
   }
   .path-sidetone .short-full__date {
     margin-bottom: 0;
@@ -8820,12 +8820,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media screen and (min-width: 1200px) {
+  .push-aside {
+    padding-right: 300px !important;
+  }
+
   .path-single .single__bg {
     position: absolute !important;
     background-attachment: fixed !important;
-  }
-  .path-single .container.push-aside {
-    padding-right: 300px !important;
   }
 }
 @media screen and (min-width: 992px) {
@@ -8985,6 +8986,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media screen and (min-width: 992px) {
+  .path-sidetone .header-main {
+    background-color: white !important;
+  }
+  .path-sidetone .nav-menu__link, .path-sidetone .nav-menu__link--active, .path-sidetone .nav-main__extra {
+    color: black;
+  }
+  .path-sidetone .nav-main__extra .hamburger .hamburger-box {
+    background: url(/assets/img/menu_closed_black.png) 0 0 no-repeat;
+    background-size: 40px 22px;
+  }
+  .path-sidetone .nav-main__extra .hamburger .hamburger-box.active {
+    background: url(/assets/img/menu_open_black.png) 0 0 no-repeat;
+    background-size: 40px 22px;
+  }
+  .path-sidetone .nav-main__extra {
+    width: 32% !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .path-sidetone .aside-content-wrapper {
+    margin-top: 6em !important;
+  }
+}
+@media screen and (min-width: 992px) {
   .path-single {
     /* Menu */
   }
@@ -9002,14 +9027,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media screen and (min-width: 992px) {
-  .path-single .singles-page-sidebar-wrapper.active {
-    width: 30%;
+  .aside-content-wrapper {
+    margin-top: 6em !important;
   }
-  .path-single .aside-content-wrapper {
-    margin-top: 6em;
-  }
-  .path-single .singles-page-sidebar-wrapper.active.up-scrolled {
+
+  .page-sidebar-wrapper.active.up-scrolled {
     margin-top: -3em;
+  }
+
+  .page-sidebar-wrapper.active {
+    width: 30% !important;
+  }
+
+  .path-sidetone .anchor {
+    top: -200px !important;
   }
 }
 @media screen and (min-width: 992px) {
@@ -9090,6 +9121,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media screen and (min-width: 768px) {
+  h2 {
+    font-size: 36px;
+  }
+
+  .path-sidetone .short-full-content {
+    padding-left: 10%;
+  }
+  .path-sidetone .short-list__icon--large {
+    margin-left: -40px;
+  }
+  .path-sidetone .short-list__author-img-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+  .path-sidetone .short-full__title, .path-sidetone .short-full__date, .path-sidetone .short-full__content {
+    padding-left: 47px;
+  }
+  .path-sidetone .short-full__content {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 768px) {
   .path-single .nav-menu {
     padding: 10px 0;
   }
@@ -9101,13 +9154,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* Sidebar width from tablet
   *   -applied to all pages with this sidebar
   */
-  .singles-page-sidebar-wrapper.active {
+  .page-sidebar-wrapper.active {
     width: 40%;
   }
 
   .aside-content-wrapper {
-    margin-top: 5em;
-    height: 950px;
+    margin-top: 5em !important;
+    height: 950px !important;
   }
 }
 @media screen and (min-width: 768px) {

@@ -2,12 +2,12 @@
   /* Sidebar width from tablet
   *   -applied to all pages with this sidebar
   */
-  .singles-page-sidebar-wrapper.active {
+  .page-sidebar-wrapper.active {
     width: 40%;
   }
   .aside-content-wrapper {
-    margin-top: 5em;
-    height: 950px;
+    margin-top: 5em !important;
+    height: 950px !important;
   }
   .path-single {
 

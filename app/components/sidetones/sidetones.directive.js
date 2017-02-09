@@ -16,6 +16,17 @@ function sidetonesPageDirective($timeout) {
       $timeout(function() {
         $(element).find('.bxslider').bxSlider();
       }, 500);
+
+      /**
+      * Effects when on large screen and user clicks on sidebar menu
+      *  - push the main container to the right.
+      */
+      scope.$on('menu-opened', function(event, args) {
+        angular.element(".short-list").addClass('push-aside');
+      });
+      scope.$on('menu-closed', function(event, args) {
+        angular.element(".short-list").removeClass('push-aside');
+      });
     },
     templateUrl: 'app/components/sidetones/sidetones.tpl.html'
   }

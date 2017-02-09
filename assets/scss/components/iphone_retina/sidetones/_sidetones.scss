@@ -1,5 +1,11 @@
 @media #{$iphone_retina} {
   .path-sidetone {
+    h2 {
+      font-size: 24px;
+    }
+    .anchor {
+      top: -250px !important;
+    }
     .sidetones-page-wrapper.ng-scope {
       padding-left: 0;
       padding-right: 0;
@@ -9,9 +15,6 @@
       position: relative;
       padding-top: 65px;
       z-index: 1;
-    }
-    .sidetones-main-wrapper {
-      padding: 0px 10px;
     }
     .short-list__short:last-child {
       margin-bottom: 1em;
@@ -80,6 +83,9 @@
     .short-full__title {
       margin-bottom: 10px;
       padding: 0 11.1% 0 0;
+      font-weight: 700;
+      color: black;
+      line-height: 1.3em;
     }
     .short-full__date {
       margin-bottom: 0;
