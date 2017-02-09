@@ -1,0 +1,10 @@
+@media #{$extra_small} {
+  .path-single {
+    .aside-content-wrapper {
+      margin-top: 5em;
+    }
+    a.page__aside__item.sidebar-item.ng-scope {
+      width: 100% !important;
+    }
+  }
+}

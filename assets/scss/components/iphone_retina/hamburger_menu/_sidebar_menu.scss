@@ -1,5 +1,5 @@
 @media #{$iphone_retina} {
-  .singles-page-sidebar-wrapper {
+  .page-sidebar-wrapper {
     display: block;
     float: right;
     top: 0px;
@@ -14,7 +14,7 @@
     right: -100%;
     width: 80%;
   }
-  .singles-page-sidebar-wrapper.active {
+  .page-sidebar-wrapper.active {
     right: 0px;
   }
   .aside-content-wrapper {

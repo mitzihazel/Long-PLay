@@ -1,0 +1,17 @@
+@media #{$mediumScreen} {
+  .path-single {
+    /* Menu */
+    ul.nav-menu a:hover, ul.nav-menu a:focus {
+      color: white !important;
+    }
+    header.header-main.header-main-smallest ul.nav-menu a:hover, header.header-main.header-main-smallest ul.nav-menu a:focus {
+      color: black !important;
+    }
+    .nav-main__extra {
+      width: 32% !important;
+    }
+    .nav-main__extra-link, .nav-main__extra-link--search, .nav-main__extra-link--login, .nav-main__extra-link--logout {
+      margin-left: 43px !important;
+    }
+  }
+}

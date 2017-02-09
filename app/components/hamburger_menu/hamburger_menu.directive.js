@@ -1,16 +1,29 @@
-angular.module('longPlay').directive('singlesSidebar', ['$rootScope', '$location', singlesSidebarDirective]);
+angular.module('longPlay').directive('hamburgerMenu', ['$rootScope', '$location', singlesSidebarDirective]);
 
 function singlesSidebarDirective($rootScope, $location) {
   return {
     restrict: 'A',
-    controller: function($scope, singles, anchorSmoothScroll) {
-      $scope.singles_side = [];
+    controller: function($scope, singles, sidetones, anchorSmoothScroll) {
+      $scope.side_menus = [];
 
-      singles.index()
-        .then(function(response) {
-            $scope.singles_side = response.singles;
-        }
-      );
+      /**
+      * Check the current page displayed
+      * - render the sidebar content based on it.
+      */
+      if($location.path() === '/single') {
+        singles.index()
+          .then(function(response) {
+              $scope.side_menus = response.singles;
+          }
+        );
+      }
+      else if($location.path() === '/sidetone') {
+        sidetones.index()
+          .then(function(response) {
+            $scope.side_menus = response.sidetones;
+          }
+        );
+      }
 
       /**
       * Implementing anchorScroll
@@ -39,29 +52,29 @@ function singlesSidebarDirective($rootScope, $location) {
       * Header menu is changed.
       */
       scope.$on('page-scrolled', function(event, args) {
-        angular.element(".singles-page-sidebar-wrapper").addClass('up-scrolled');
+        angular.element(".page-sidebar-wrapper").addClass('up-scrolled');
       });
       scope.$on('on-top', function(event, args) {
-        angular.element(".singles-page-sidebar-wrapper").removeClass('up-scrolled');
+        angular.element(".page-sidebar-wrapper").removeClass('up-scrolled');
       });
 
       /**
       * Hamburger Menu Options
       */
       scope.$on('menu-opened', function(event, args) {
-        angular.element(".singles-page-sidebar-wrapper").addClass('active');
+        angular.element(".page-sidebar-wrapper").addClass('active');
       });
       scope.$on('menu-closed', function(event, args) {
-        angular.element(".singles-page-sidebar-wrapper").removeClass('active');
+        angular.element(".page-sidebar-wrapper").removeClass('active');
       });
 
       /**
       * Sidebar wrapper display
       */
       scope.$on('selected-single', function(event, args) {
-        angular.element(".singles-page-sidebar-wrapper").removeClass('active');
+        angular.element(".page-sidebar-wrapper").removeClass('active');
       });
     },
-    templateUrl: 'app/components/singles/singles_sidebar_links/singles_sidebar.tpl.html'
+    templateUrl: 'app/components/hamburger_menu/hamburger_menu.tpl.html'
   }
 }

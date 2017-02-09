@@ -1,0 +1,23 @@
+@media #{$mediumScreen} {
+  .anchor {
+    top: -90px;
+  }
+  .path-single {
+    .single__bg {
+      position: static;
+      background-attachment: inherit;
+    }
+    .main-content-wrapper.ng-scope {
+      padding-top: 0px !important;
+    }
+    article:first-child {
+      padding-top: 200px !important;
+    }
+    .singles-page {
+      padding-top: 40px !important;
+    }
+    .single__lp {
+      margin-left: 35px !important;
+    }
+  }
+}

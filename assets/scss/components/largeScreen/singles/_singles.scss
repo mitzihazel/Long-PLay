@@ -1,0 +1,11 @@
+@media #{$largeScreen} {
+  .path-single {
+    .single__bg {
+      position: absolute !important;
+      background-attachment: fixed !important;
+    }
+    .container.push-aside {
+      padding-right: 300px !important;
+    }
+  }
+}

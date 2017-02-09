@@ -1,0 +1,10 @@
+@media #{$tablet} {
+  .path-single {
+    .nav-menu {
+      padding: 10px 0;
+    }
+    .nav-menu__link, .nav-menu__link--active {
+      letter-spacing: 2px !important;
+    }
+  }
+}

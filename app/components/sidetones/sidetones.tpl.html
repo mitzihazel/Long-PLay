@@ -1,0 +1,36 @@
+<article ng-repeat="sidetone in sidetones" class="short-list short-list__short scrollto">
+	<a class="anchor" id="{{sidetone.nid}}" name="{{sidetone.nid}}"></a>
+	<div class="short-full-content">
+		<header class="short-list__header hyphens hyphens-mobile">
+			<span class="short-list__icon--large"></span>
+			<div class="short-list__author-img-wrapper items-single">
+				<div class="item-wrapper"><img src="{{sidetone.author_image}}" class="item" ></div>
+			</div>
+		</header>
+		<h2 class="short-full__title hyphens-mobile"><span>{{sidetone.title}}</span></h2>
+		<div class="short-full__date hyphens hyphens-mobile">
+			{{sidetone.created}}, <a href="/author#antti-jarvi">{{sidetone.author}}</a>
+		</div>
+		<div class="short-full__content hyphens hyphens-mobile">
+			<p>{{sidetone.body}}</p>
+			<div class="sidetone-footer">
+				<p><em>Tämä oli Long Playn ilmainen Sivuääni. Julkaisemme myös <a href="/single">pitkiä ja tutkivia juttuja.</a> Niiden tekeminen rahoitetaan kokonaan lukijoiden tilausmaksuilla, koska emme myy mainostilaa. Jos haluat tukea perusteellista journalismia, <a class="use-ajax" data-dialog-options="{&quot;dialogClass&quot;:&quot;payment-modal&quot;,&quot;width&quot;:&quot;80%&quot;,&quot;maxWidth&quot;:&quot;800px&quot;,&quot;left&quot;:&quot;10%&quot;}" data-dialog-type="modal" href="/dcommerce/subscription-select-page/with-node/314">tilaa Long Play tästä.</a></em></p>
+			</div>
+		</div>
+	</div><iframe frameborder="0" height="0" id="print_frame" name="print_frame" src="about:blank" width="0"></iframe>
+	<div class="addtoany-box">
+		<div class="addthis_print" id="296"><img class="at-icon-wrapper" height="32" src="/themes/longplay/assets/img/print_icon.png" width="32"></div><span class="short-social-plugin not_loaded kansalaisaloite-eutanasiasta-voi-talla-kertaa-onnistua" data-src="/get_social_plugins/296"></span>
+	</div>
+	<div class="author-list__singles">
+		<h2 class="author-list__singles-head">Lisää kirjoittajalta</h2>
+		<section class="author-list__covers">
+			<div class="bxslider">
+				<div class="slider-wrapper">
+					<article about="/single/lahto" class="singles-related" data-history-node-id="294" role="article">
+						<a class="single__cover" href="/single/lahto"><span class="single__cover-img-wrapper"><img alt="Tuomas Jääskeläinen: Lähtö" height="480" bn-lazy-src="http://longplay.fi/sites/default/files/styles/360x485/public/2016-10/LP45_Lahto_768px.jpg?itok=FG5MdqUJ" typeof="foaf:Image" width="360"> <span class="single__lp">LP<span class="single__lp-num">45</span></span></span> <strong class="single__title"><span>Lähtö</span></strong></a>
+					</article>
+				</div>
+			</div>
+		</section>
+	</div>
+</article>

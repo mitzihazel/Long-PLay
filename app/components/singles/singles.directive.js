@@ -1,6 +1,6 @@
-angular.module('longPlay').directive('singlesPage', [singlesPageDirective]);
+angular.module('longPlay').directive('singlesPage', ['$sce', singlesPageDirective]);
 
-function singlesPageDirective() {
+function singlesPageDirective($sce) {
   return {
     restrict: 'A',
     controller: function($scope, singles) {

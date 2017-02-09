@@ -1,0 +1,17 @@
+@media #{$largeScreen} {
+  .path-single {
+    .nav-main__extra {
+      width: 27% !important;
+    }
+    .nav-menu {
+      width: 90%;
+    }
+    .nav-menu__item {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+    .nav-main__extra-link, .nav-main__extra-link--search, .nav-main__extra-link--login, .nav-main__extra-link--logout {
+      margin-left: 77px !important;
+    }
+  }
+}
