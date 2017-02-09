@@ -9,7 +9,8 @@ angular.module('longPlay').config(function($routeProvider, $locationProvider) {
     reloadOnSearch: false
   })
   .when("/sidetone", {
-    templateUrl : "app/shared/sidetones/sidetones.view.html"
+    templateUrl : "app/shared/sidetones/sidetones.view.html",
+    reloadOnSearch: false
   })
 
   // use the HTML5 History API

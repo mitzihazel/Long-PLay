@@ -1,0 +1,21 @@
+@media #{$mediumScreen} {
+  .path-sidetone {
+    .header-main {
+      background-color: white !important;
+    }
+    .nav-menu__link, .nav-menu__link--active, .nav-main__extra {
+      color: black;
+    }
+    .nav-main__extra .hamburger .hamburger-box {
+      background: url(/assets/img/menu_closed_black.png) 0 0 no-repeat;
+      background-size: 40px 22px;
+    }
+    .nav-main__extra .hamburger .hamburger-box.active {
+      background: url(/assets/img/menu_open_black.png) 0 0 no-repeat;
+      background-size: 40px 22px;
+    }
+    .nav-main__extra {
+      width: 32% !important;
+    }
+  }
+}

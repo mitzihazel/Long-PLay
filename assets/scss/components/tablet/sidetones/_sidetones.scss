@@ -1,0 +1,23 @@
+@media #{$tablet} {
+  h2 {
+    font-size: 36px;
+  }
+  .path-sidetone {
+    .short-full-content {
+      padding-left: 10%;
+    }
+    .short-list__icon--large {
+      margin-left: -40px;
+    }
+    .short-list__author-img-wrapper {
+      width: 200px;
+      height: 200px;
+    }
+    .short-full__title, .short-full__date, .short-full__content {
+      padding-left: 47px;
+    }
+    .short-full__content {
+      font-size: 19px;
+    }
+  }
+}
