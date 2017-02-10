@@ -1,7 +1,10 @@
 @media #{$mediumScreen} {
   .path-sidetone {
     .aside-content-wrapper {
-      margin-top: 6em;
+      margin-top: 6em !important;
+    }
+    .page-sidebar-wrapper.active {
+      width: 30%;
     }
   }
 }

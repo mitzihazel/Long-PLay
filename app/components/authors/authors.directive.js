@@ -32,6 +32,12 @@ function authorsPageDirective($timeout, $location) {
           slideMargin: 10,
         });
       }, 500);
+      scope.$on('menu-opened', function(event, args) {
+        angular.element(".author-teaser").addClass('push-aside');
+      });
+      scope.$on('menu-closed', function(event, args) {
+        angular.element(".author-teaser").removeClass('push-aside');
+      });
     },
     templateUrl: 'app/components/authors/authors.tpl.html'
   }

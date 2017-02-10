@@ -8,7 +8,7 @@ function sidetonesPageDirective($timeout) {
 
       sidetones.index()
         .then(function(data) {
-          $scope.sidetones = data.sidetones;
+          $scope.sidetones = data;
         }
       );
     },

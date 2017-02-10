@@ -8,7 +8,7 @@ function singlesPageDirective($sce) {
 
       singles.index()
         .then(function(response) {
-            $scope.singles = response.singles;
+            $scope.singles = response;
         }
       );
     },

@@ -8,7 +8,7 @@ function booksPageDirective($timeout) {
 
       books.index()
         .then(function(data) {
-          $scope.books = data.books;
+          $scope.books = data;
         }
       );
     },

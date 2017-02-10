@@ -1,13 +1,13 @@
 @media #{$mediumScreen} {
-  .path-book {
+  .path-author {
+    .nav-main__extra {
+      width: 32% !important;
+    }
     .anchor {
-      top: -95px;
+      top: -200px;
     }
     .aside-content-wrapper {
       margin-top: 6em !important;
-    }
-    .nav-main__extra {
-      width: 32% !important
     }
     .page-sidebar-wrapper.active {
       width: 30%;

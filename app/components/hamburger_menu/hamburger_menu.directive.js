@@ -14,21 +14,21 @@ function singlesSidebarDirective($rootScope, $location, $timeout)   {
       if( $scope.currentLocation === '/single') {
         singles.index()
           .then(function(response) {
-              $scope.side_menus = response.singles;
+              $scope.side_menus = response;
           }
         );
       }
       else if( $scope.currentLocation === '/sidetone') {
         sidetones.index()
           .then(function(response) {
-            $scope.side_menus = response.sidetones;
+            $scope.side_menus = response;
           }
         );
       }
       else if( $scope.currentLocation === '/book') {
         books.index()
           .then(function(response) {
-            $scope.side_menus = response.books;
+            $scope.side_menus = response;
           }
         );
       }
@@ -48,12 +48,27 @@ function singlesSidebarDirective($rootScope, $location, $timeout)   {
         anchorSmoothScroll.scrollTo(id);
         angular.element(".aside-content-wrapper a" ).removeClass('active');
         angular.element(".aside-content-wrapper a[href=#"+ id +"]" ).addClass('active');
+
+        // var top = $(".aside-content-wrapper a.active" ).offset().top
+        // var height = $(".aside-content-wrapper" ).height();
+        // var diff = top - height/2
+        // $(".aside-content-wrapper" ).scrollTop($(".aside-content-wrapper" ).scrollTop()+diff)
      }
     },
     link: function(scope, element, attrs) {
+      angular.element('.aside-content-wrapper').on('click', function(e) {
+        var el = angular.element('.aside-content-wrapper a.active');
+        var windowHeight = $(window).height();
+        var offset;
+
+        offset = (windowHeight / 2);
+
+        var speed = 700;
+        angular.element('.aside-content-wrapper').animate({scrollTop:offset}, speed);
+      });
+
       $timeout(function() {
         var screenSize = window.innerWidth;
-        console.log(screenSize);
 
         // we only need this effect when on Small screen sizes
         if (screenSize < 992 ) {

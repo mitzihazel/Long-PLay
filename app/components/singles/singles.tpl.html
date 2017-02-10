@@ -37,9 +37,13 @@
           </div>
 
           <div class="single__actions">
-            <div ng-bind-html="single.field_license | to_trusted">
-            </div>
-        </div>
+            <a class="btn primary use-ajax" href="" data-dialog-type="modal">
+              Osta {{single.price}}
+            </a>
+            <a href="" class="btn use-ajax" data-dialog-type="modal">
+              Ryhdy tilaajaksi
+            </a>
+          </div>
       </div>
     </div>
   </article>
